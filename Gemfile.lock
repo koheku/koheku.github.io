@@ -8,6 +8,13 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
     addressable (2.3.6)
+    bitters (0.10.1)
+      bourbon (>= 3.2)
+      sass (>= 3.2)
+      thor
+    bourbon (4.0.2)
+      sass (~> 3.3)
+      thor
     builder (3.2.2)
     celluloid (0.16.0)
       timers (~> 4.0.0)
@@ -91,6 +98,9 @@ GEM
       sprockets-sass (~> 1.2.0)
     minitest (5.5.0)
     multi_json (1.10.1)
+    neat (1.7.0)
+      bourbon (>= 4.0)
+      sass (>= 3.3)
     net-sftp (2.1.2)
       net-ssh (>= 2.6.5)
     net-ssh (2.9.1)
@@ -136,8 +146,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bitters
+  bourbon
   builder (~> 3.0)
   middleman (~> 3.3.7)
   middleman-blog (~> 3.5.3)
   middleman-deploy
   middleman-livereload
+  neat
