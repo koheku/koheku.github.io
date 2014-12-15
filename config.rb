@@ -101,3 +101,11 @@ configure :build do
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
 end
+
+# github deploy
+activate :deploy do |deploy|
+  deploy.method = :git
+  deploy.build_before = true
+  deploy.branch   = "master"
+  deploy.remote   = "git@github.com:koheku/koheku.github.io.git"
+end
