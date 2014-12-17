@@ -5,13 +5,13 @@ nav {
   ul {
     display: inline-block;
     margin-bottom: em(10);
-  }
-}
 
-.blog-title {
-  margin: 1rem;
-  font-size: 1.4em;
-  font-weight: 700;
-  letterspacing: 4px;
-  text-transform: uppercase;
+    a {
+      margin: 1rem;
+      font-size: 13px;
+      font-weight: 700;
+      letterspacing: 4px;
+      text-transform: uppercase;
+    }
+  }
 }
