@@ -1,16 +1,20 @@
 nav {
-  border-bottom: 1px solid $base-border-color;
-  margin: em(30) 0;
+  @include outer-container;
+  padding: 0 1rem 0 1rem;
 
   ul {
     display: inline-block;
-    margin-bottom: em(10);
+    margin: 0.5rem 0 0.5rem 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid $base-border-color;
+
+    a.current-nav-tab {
+      color: $hover-link-color;
+    }
 
     a {
-      margin: 1rem;
-      font-size: 13px;
-      font-weight: 400;
-      letterspacing: 4px;
+      padding: 1rem;
+      font-size: 1em;
       text-transform: uppercase;
     }
   }
