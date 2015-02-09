@@ -1,4 +1,16 @@
-<%= partial "partials/nav" %>
+<nav>
+  <!-- <a class=logo> -->
+  <!--   <p>pH</p> -->
+  <!-- </a> -->
+
+      <%= link_to "pH", "/index.html", { :class=>"logo" } %>
+  <ul>
+      <%= link_to "Profile", "/index.html", { :class=>"current-nav-tab" } %>
+      <%= link_to "Work", "/work/index.html" %>
+      <%= link_to "Blog", "/blog/index.html" %>
+  </ul>
+</nav>
+
 <div class=profile-main>
   <!-- <div class=profile&#45;intro> -->
   <!--   <h6>Hello ! This website is in progress.</h6> -->

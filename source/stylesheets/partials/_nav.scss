@@ -1,6 +1,22 @@
 nav {
   @include outer-container;
-  padding: 0 1rem 0 1rem;
+  padding: 1rem 1rem 0 1rem;
+
+  .logo {
+    display: inline-block;
+    margin: 0.5rem 0.5rem;
+    border: 1px solid $base-border-color;
+    border-radius: 50%;
+    width: 2.5em;
+    height: 2.5em;
+    text-align: center;
+    line-height: 2.2em;
+
+    &:hover {
+      background-color: $hover-link-color;
+      color: white;
+    }
+  }
 
   ul {
     display: inline-block;
