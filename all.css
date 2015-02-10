@@ -374,7 +374,7 @@ html {
 /* line 55, partials/_layout.scss */
 body {
   margin: 0;
-  font-size: x-large; }
+  font-size: large; }
 
 @media (max-width: 1000px) {
   /* line 61, partials/_layout.scss */
@@ -383,7 +383,7 @@ body {
 @media (max-width: 500px) {
   /* line 65, partials/_layout.scss */
   body {
-    font-size: small; } }
+    font-size: large; } }
 /* line 1, partials/_nav.scss */
 nav {
   max-width: 31.25em;
