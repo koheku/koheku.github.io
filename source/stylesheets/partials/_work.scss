@@ -1,0 +1,5 @@
+@import "partials/device";
+
+.work-wrap {
+  @include outer-container;
+}
