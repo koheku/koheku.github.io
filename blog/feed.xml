@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge;chrome=1' />
+    <title>koheku's lair</title>
+    <link href="/all.css" rel="stylesheet" type="text/css" />
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/blog/feed.xml" />
+  </head>
+
+  <body>
+    <?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Blog Name</title>
+  <subtitle>Blog subtitle</subtitle>
+  <id>http://blog.url.com/blog</id>
+  <link href="http://blog.url.com/blog"/>
+  <link href="http://blog.url.com/blog/feed.xml" rel="self"/>
+  <updated>2014-12-15T01:00:00+01:00</updated>
+  <author>
+    <name>Blog Author</name>
+  </author>
+  <entry>
+    <title>Blog with middleman and Github Pages</title>
+    <link rel="alternate" href="http://blog.url.com/blog/2014/12/15/creating-my-blog.html"/>
+    <id>http://blog.url.com/blog/2014/12/15/creating-my-blog.html</id>
+    <published>2014-12-15T01:00:00+01:00</published>
+    <updated>2015-02-05T12:24:08+01:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;Welcome to my blog ! ヽ༼ຈل͜ຈ༽ﾉ
+It is powered by middleman and github pages.&lt;/p&gt;
+</content>
+  </entry>
+</feed>
+
+  </body>
+
+</html>
