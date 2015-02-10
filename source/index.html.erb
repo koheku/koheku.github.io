@@ -1,9 +1,5 @@
 <nav>
-  <!-- <a class=logo> -->
-  <!--   <p>pH</p> -->
-  <!-- </a> -->
-
-      <%= link_to "pH", "/index.html", { :class=>"logo" } %>
+  <%= link_to "pH", "/index.html", { :class=>"logo" } %>
   <ul>
       <%= link_to "Profile", "/index.html", { :class=>"current-nav-tab" } %>
       <%= link_to "Work", "/work/index.html" %>
@@ -11,8 +7,15 @@
   </ul>
 </nav>
 
-<div class=profile-main>
-  <!-- <div class=profile&#45;intro> -->
-  <!--   <h6>Hello ! This website is in progress.</h6> -->
-  <!-- </div> -->
+<div class=profile-wrap>
+  <div class=profile-pic>
+    <img src="https://pbs.twimg.com/profile_images/445828601582075904/jwg-lMwI.jpeg" alt="Profile picture">
+  </div>
+  <div class=profile-intro>
+    <p>Hello, I'm Paul-Henri.
+    <br>I'm an iOS developer.</p>
+  </div>
+  <div class=iphone-side-images>
+    <img src="../assets/iphone-side-images.png" alt="iPhone side view">
+  </div>
 </div>
