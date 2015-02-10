@@ -4,16 +4,17 @@ nav {
 
   .logo {
     @include transition(background-color 0.1s linear);
+
     display: inline-block;
     margin: 0.5rem 0.5rem;
     border: 1px solid $hover-link-color;
     border-radius: 50%;
-    width: 2.5em;
-    height: 2.5em;
     text-align: center;
     line-height: 2.2em;
     color: $hover-link-color;
     text-align: center;
+    height: 2.5em;
+    width: 2.5em;
 
     &:hover {
       background-color: $hover-link-color;
