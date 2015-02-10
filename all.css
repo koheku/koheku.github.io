@@ -285,24 +285,23 @@ html {
   max-width: 31.25em;
   margin-left: auto;
   margin-right: auto;
-  padding: 1.5em 1.5em; }
+  padding-top: 1.5em; }
   /* line 15, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_clearfix.scss */
   .profile-wrap:after {
     content: "";
     display: table;
     clear: both; }
-  /* line 5, partials/_layout.scss */
+  /* line 6, partials/_layout.scss */
   .profile-wrap .profile-pic {
     float: left;
     display: block;
     margin-right: 0%;
-    width: 16.66667%;
-    height: 5em; }
+    width: 16.66667%; }
     /* line 85, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/neat-1.7.0/app/assets/stylesheets/grid/_span-columns.scss */
     .profile-wrap .profile-pic:last-child {
       margin-right: 0; }
     @media screen and (max-width: 500px) {
-      /* line 5, partials/_layout.scss */
+      /* line 6, partials/_layout.scss */
       .profile-wrap .profile-pic {
         float: left;
         display: block;
@@ -310,55 +309,59 @@ html {
         width: 100%; }
         /* line 85, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/neat-1.7.0/app/assets/stylesheets/grid/_span-columns.scss */
         .profile-wrap .profile-pic:last-child {
-          margin-right: 0; }
-        /* line 9, partials/_layout.scss */
-        .profile-wrap .profile-pic img {
-          height: 100%; } }
-    /* line 16, partials/_layout.scss */
+          margin-right: 0; } }
+    /* line 12, partials/_layout.scss */
     .profile-wrap .profile-pic img {
-      margin-left: 25%;
       display: block;
       border-radius: 50%;
-      margin-left: auto;
-      margin-right: auto; }
-  /* line 25, partials/_layout.scss */
+      margin: 0 auto;
+      max-height: 5em; }
+  /* line 20, partials/_layout.scss */
   .profile-wrap .profile-intro {
     float: left;
     display: block;
     margin-right: 0%;
-    width: 58.33333%;
-    padding: 1em 2em;
-    text-align: left;
-    font-family: "HelveticaNeue-Light", "HelveticaNeue-Medium", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-    border-left-width: 1px;
-    border-left-color: base-accent-color; }
+    width: 58.33333%; }
     /* line 85, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/neat-1.7.0/app/assets/stylesheets/grid/_span-columns.scss */
     .profile-wrap .profile-intro:last-child {
       margin-right: 0; }
     @media screen and (max-width: 500px) {
-      /* line 25, partials/_layout.scss */
+      /* line 20, partials/_layout.scss */
       .profile-wrap .profile-intro {
         float: left;
         display: block;
         margin-right: 0%;
         width: 75%;
-        text-align: center;
-        padding-top: 2em; }
+        padding: 2em 0; }
         /* line 85, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/neat-1.7.0/app/assets/stylesheets/grid/_span-columns.scss */
         .profile-wrap .profile-intro:last-child {
           margin-right: 0; } }
-  /* line 41, partials/_layout.scss */
+    /* line 27, partials/_layout.scss */
+    .profile-wrap .profile-intro .wrap {
+      padding: 0 1.5em; }
+      /* line 29, partials/_layout.scss */
+      .profile-wrap .profile-intro .wrap .text-wrap {
+        padding: 0 0.5em;
+        text-align: left;
+        font-family: "HelveticaNeue-Light", "HelveticaNeue-Medium", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+        border-left: 1px solid #DDD; }
+        /* line 34, partials/_layout.scss */
+        .profile-wrap .profile-intro .wrap .text-wrap .subtitle {
+          color: #BBBBBB;
+          font-size: 0.8em; }
+  /* line 42, partials/_layout.scss */
   .profile-wrap .iphone-side-images {
     float: left;
     display: block;
     margin-right: 0%;
     width: 25%;
-    margin-top: -2em; }
+    margin-top: -2em;
+    padding-right: 1em; }
     /* line 85, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/neat-1.7.0/app/assets/stylesheets/grid/_span-columns.scss */
     .profile-wrap .iphone-side-images:last-child {
       margin-right: 0; }
     @media screen and (max-width: 500px) {
-      /* line 41, partials/_layout.scss */
+      /* line 42, partials/_layout.scss */
       .profile-wrap .iphone-side-images {
         float: left;
         display: block;
@@ -367,21 +370,22 @@ html {
         /* line 85, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/neat-1.7.0/app/assets/stylesheets/grid/_span-columns.scss */
         .profile-wrap .iphone-side-images:last-child {
           margin-right: 0; } }
-    /* line 49, partials/_layout.scss */
+    /* line 51, partials/_layout.scss */
     .profile-wrap .iphone-side-images img {
+      float: left;
       height: 20em; }
 
-/* line 55, partials/_layout.scss */
+/* line 58, partials/_layout.scss */
 body {
   margin: 0;
   font-size: large; }
 
 @media (max-width: 1000px) {
-  /* line 61, partials/_layout.scss */
+  /* line 64, partials/_layout.scss */
   body {
     font-size: 100%; } }
 @media (max-width: 500px) {
-  /* line 65, partials/_layout.scss */
+  /* line 68, partials/_layout.scss */
   body {
     font-size: 100%; } }
 /* line 1, partials/_nav.scss */
@@ -404,26 +408,26 @@ nav {
     margin: 0.5rem 0.5rem;
     border: 1px solid #6a6a6a;
     border-radius: 50%;
-    width: 2.5em;
-    height: 2.5em;
     text-align: center;
     line-height: 2.2em;
     color: #6a6a6a;
-    text-align: center; }
-    /* line 18, partials/_nav.scss */
+    text-align: center;
+    height: 2.5em;
+    width: 2.5em; }
+    /* line 19, partials/_nav.scss */
     nav .logo:hover {
       background-color: #6a6a6a;
       color: white; }
-  /* line 24, partials/_nav.scss */
+  /* line 25, partials/_nav.scss */
   nav ul {
     display: inline-block;
     margin: 0.5rem 0 0.5rem 0;
     padding-bottom: 0.5rem;
     border-bottom: 1px solid #DDD; }
-    /* line 30, partials/_nav.scss */
+    /* line 31, partials/_nav.scss */
     nav ul a.current-nav-tab {
       color: #6a6a6a; }
-    /* line 34, partials/_nav.scss */
+    /* line 35, partials/_nav.scss */
     nav ul a {
       padding: 1rem;
       font-size: 1em;
