@@ -54,7 +54,7 @@
 
 body {
   margin: 0;
-  font-size: x-large;
+  font-size: large;
 }
 
 @media (max-width: 1000px) {
@@ -62,5 +62,5 @@ body {
 }
 
 @media (max-width: 500px) {
-  body { font-size: small; }
+  body { font-size: large; }
 }
