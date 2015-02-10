@@ -110,3 +110,8 @@ activate :deploy do |deploy|
   deploy.branch   = "master"
   deploy.remote   = "git@github.com:koheku/koheku.github.io.git"
 end
+
+# middleman google analytics
+activate :google_analytics do |ga|
+  ga.tracking_id = 'UA-48877386-1' # Replace with your property ID.
+end
