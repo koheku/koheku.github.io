@@ -18,7 +18,7 @@
   }
 
   .profile-intro {
-    @include span-columns(7);
+    @include span-columns(8);
     @include media($mobile) {
       @include span-columns(3);
       padding: 2em 0;
@@ -29,18 +29,19 @@
       .text-wrap {
         padding: 0 0.5em;
         text-align: left;
-        font-family: $sans-serif-light;
+        font-family: $sans-serif-regular;
         border-left: 1px solid $base-accent-color;
         .subtitle {
-          color: #BBBBBB;
-          font-size:0.8em;
+          color: #4A4A4A;
+          font-family: $sans-serif-light;
+          font-size:0.9em;
         }
       }
     }
   }
 
   .iphone-side-images {
-    @include span-columns(3);
+    @include span-columns(2);
     @include media($mobile) {
       @include span-columns(1);
     }
