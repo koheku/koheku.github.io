@@ -268,13 +268,13 @@ input[type="submit"] {
  * http://neat.bourbon.io
  * Copyright 2012-2014 thoughtbot, inc.
  * MIT License */
-/* line 2, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/neat-1.7.0/app/assets/stylesheets/grid/_box-sizing.scss */
+/* line 2, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/neat-1.7.0/app/assets/stylesheets/grid/_box-sizing.scss */
 html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-/* line 7, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/neat-1.7.0/app/assets/stylesheets/grid/_box-sizing.scss */
+/* line 7, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/neat-1.7.0/app/assets/stylesheets/grid/_box-sizing.scss */
 *, *:before, *:after {
   -webkit-box-sizing: inherit;
   -moz-box-sizing: inherit;
@@ -286,7 +286,7 @@ html {
   margin-left: auto;
   margin-right: auto;
   padding-top: 1.5em; }
-  /* line 15, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_clearfix.scss */
+  /* line 15, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_clearfix.scss */
   .profile-wrap:after {
     content: "";
     display: table;
@@ -297,7 +297,7 @@ html {
     display: block;
     margin-right: 0%;
     width: 16.66667%; }
-    /* line 85, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/neat-1.7.0/app/assets/stylesheets/grid/_span-columns.scss */
+    /* line 85, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/neat-1.7.0/app/assets/stylesheets/grid/_span-columns.scss */
     .profile-wrap .profile-pic:last-child {
       margin-right: 0; }
     @media screen and (max-width: 500px) {
@@ -307,7 +307,7 @@ html {
         display: block;
         margin-right: 0%;
         width: 100%; }
-        /* line 85, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/neat-1.7.0/app/assets/stylesheets/grid/_span-columns.scss */
+        /* line 85, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/neat-1.7.0/app/assets/stylesheets/grid/_span-columns.scss */
         .profile-wrap .profile-pic:last-child {
           margin-right: 0; } }
     /* line 12, partials/_layout.scss */
@@ -321,8 +321,8 @@ html {
     float: left;
     display: block;
     margin-right: 0%;
-    width: 58.33333%; }
-    /* line 85, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/neat-1.7.0/app/assets/stylesheets/grid/_span-columns.scss */
+    width: 66.66667%; }
+    /* line 85, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/neat-1.7.0/app/assets/stylesheets/grid/_span-columns.scss */
     .profile-wrap .profile-intro:last-child {
       margin-right: 0; }
     @media screen and (max-width: 500px) {
@@ -333,7 +333,7 @@ html {
         margin-right: 0%;
         width: 75%;
         padding: 2em 0; }
-        /* line 85, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/neat-1.7.0/app/assets/stylesheets/grid/_span-columns.scss */
+        /* line 85, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/neat-1.7.0/app/assets/stylesheets/grid/_span-columns.scss */
         .profile-wrap .profile-intro:last-child {
           margin-right: 0; } }
     /* line 27, partials/_layout.scss */
@@ -343,49 +343,50 @@ html {
       .profile-wrap .profile-intro .wrap .text-wrap {
         padding: 0 0.5em;
         text-align: left;
-        font-family: "HelveticaNeue-Light", "HelveticaNeue-Medium", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+        font-family: "HelveticaNeue-Regular", "HelveticaNeue-Medium", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
         border-left: 1px solid #DDD; }
         /* line 34, partials/_layout.scss */
         .profile-wrap .profile-intro .wrap .text-wrap .subtitle {
-          color: #BBBBBB;
-          font-size: 0.8em; }
-  /* line 42, partials/_layout.scss */
+          color: #4A4A4A;
+          font-family: "HelveticaNeue-Light", "HelveticaNeue-Medium", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+          font-size: 0.9em; }
+  /* line 43, partials/_layout.scss */
   .profile-wrap .iphone-side-images {
     float: left;
     display: block;
     margin-right: 0%;
-    width: 25%;
+    width: 16.66667%;
     margin-top: -2em;
     padding-right: 1em; }
-    /* line 85, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/neat-1.7.0/app/assets/stylesheets/grid/_span-columns.scss */
+    /* line 85, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/neat-1.7.0/app/assets/stylesheets/grid/_span-columns.scss */
     .profile-wrap .iphone-side-images:last-child {
       margin-right: 0; }
     @media screen and (max-width: 500px) {
-      /* line 42, partials/_layout.scss */
+      /* line 43, partials/_layout.scss */
       .profile-wrap .iphone-side-images {
         float: left;
         display: block;
         margin-right: 0%;
         width: 25%; }
-        /* line 85, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/neat-1.7.0/app/assets/stylesheets/grid/_span-columns.scss */
+        /* line 85, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/neat-1.7.0/app/assets/stylesheets/grid/_span-columns.scss */
         .profile-wrap .iphone-side-images:last-child {
           margin-right: 0; } }
-    /* line 51, partials/_layout.scss */
+    /* line 52, partials/_layout.scss */
     .profile-wrap .iphone-side-images img {
       float: left;
       height: 20em; }
 
-/* line 58, partials/_layout.scss */
+/* line 59, partials/_layout.scss */
 body {
   margin: 0;
   font-size: large; }
 
 @media (max-width: 1000px) {
-  /* line 64, partials/_layout.scss */
+  /* line 65, partials/_layout.scss */
   body {
     font-size: 100%; } }
 @media (max-width: 500px) {
-  /* line 68, partials/_layout.scss */
+  /* line 69, partials/_layout.scss */
   body {
     font-size: 100%; } }
 /* line 1, partials/_nav.scss */
@@ -394,7 +395,7 @@ nav {
   margin-left: auto;
   margin-right: auto;
   padding: 1rem 1rem 0 1rem; }
-  /* line 15, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_clearfix.scss */
+  /* line 15, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_clearfix.scss */
   nav:after {
     content: "";
     display: table;
@@ -435,8 +436,8 @@ nav {
 
 /* line 1, partials/_device.scss */
 .device-background {
-  background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png"), -webkit-linear-gradient(10deg, #0A120D, #162C4C), no-repeat #162C4C scroll;
-  background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png"), linear-gradient(10deg, #0A120D, #162C4C), no-repeat #162C4C scroll;
+  background: url("https://www.buddybounce.com/assets/home/background_mini_new-479dd159a054f34f5f4cd66d6416a245.jpg"), -webkit-linear-gradient(10deg, #0A120D, #162C4C), no-repeat #162C4C scroll;
+  background: url("https://www.buddybounce.com/assets/home/background_mini_new-479dd159a054f34f5f4cd66d6416a245.jpg"), linear-gradient(10deg, #0A120D, #162C4C), no-repeat #162C4C scroll;
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 20em;
@@ -448,25 +449,25 @@ nav {
   .device-background h4 {
     font-size: 1.5em;
     margin: 0; }
-  /* line 38, partials/_device.scss */
+  /* line 43, partials/_device.scss */
   .device-background .device-text {
     color: white;
     padding: 2em; }
     @media screen and (min-width: 53.75em) {
-      /* line 38, partials/_device.scss */
+      /* line 43, partials/_device.scss */
       .device-background .device-text {
         float: left;
         max-width: 50%;
         padding: 4em; } }
-    /* line 48, partials/_device.scss */
+    /* line 53, partials/_device.scss */
     .device-background .device-text h4 {
       border-bottom: 1px solid rgba(255, 255, 255, 0.3);
       margin-bottom: 0.5em;
       padding-bottom: 0.5em; }
-    /* line 54, partials/_device.scss */
+    /* line 59, partials/_device.scss */
     .device-background .device-text p {
       margin-bottom: 1.5em; }
-    /* line 58, partials/_device.scss */
+    /* line 63, partials/_device.scss */
     .device-background .device-text button {
       background-color: #DDD;
       border-radius: 3px;
@@ -489,64 +490,62 @@ nav {
       text-decoration: none;
       background-clip: padding-box;
       padding: 0.7em 1em; }
-      /* line 352, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_button.scss */
+      /* line 352, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_button.scss */
       .device-background .device-text button:hover:not(:disabled) {
         background-color: #eaeaea;
         cursor: pointer; }
-      /* line 363, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_button.scss */
+      /* line 363, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_button.scss */
       .device-background .device-text button:active:not(:disabled), .device-background .device-text button:focus:not(:disabled) {
         background-color: #d0d0d0;
         cursor: pointer; }
-      /* line 352, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_button.scss */
+      /* line 352, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_button.scss */
       .device-background .device-text button:hover:not(:disabled) {
         background-color: #ebe9e9;
         cursor: pointer; }
-      /* line 363, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_button.scss */
+      /* line 363, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_button.scss */
       .device-background .device-text button:active:not(:disabled), .device-background .device-text button:focus:not(:disabled) {
         background-color: #d0d0d0;
         cursor: pointer; }
-      /* line 51, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_button.scss */
+      /* line 51, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_button.scss */
       .device-background .device-text button:disabled {
         opacity: 0.5;
         cursor: not-allowed; }
-  /* line 64, partials/_device.scss */
+  /* line 69, partials/_device.scss */
   .device-background .device {
     display: none;
-    position: relative; }
-    @media screen and (min-width: 53.75em) {
-      /* line 64, partials/_device.scss */
-      .device-background .device {
-        -webkit-transform: perspective(800px) translateX(0px) translateY(-100px) translateZ(50px) rotateX(0deg) rotateY(-20deg) rotateZ(0deg);
-        -moz-transform: perspective(800px) translateX(0px) translateY(-100px) translateZ(50px) rotateX(0deg) rotateY(-20deg) rotateZ(0deg);
-        -ms-transform: perspective(800px) translateX(0px) translateY(-100px) translateZ(50px) rotateX(0deg) rotateY(-20deg) rotateZ(0deg);
-        -o-transform: perspective(800px) translateX(0px) translateY(-100px) translateZ(50px) rotateX(0deg) rotateY(-20deg) rotateZ(0deg);
-        transform: perspective(800px) translateX(0px) translateY(-100px) translateZ(50px) rotateX(0deg) rotateY(-20deg) rotateZ(0deg);
-        background: #1a1a1a;
-        border-radius: 2em;
-        box-shadow: 1px 0px #343434, 4px 0px #060606, 7px 0px black, 10px 0px black, 13px 0px black;
-        display: block;
-        float: right;
-        margin-bottom: -12em;
-        margin-right: 5em;
-        padding: 5em 0;
-        width: 14.8em;
-        z-index: 99999; }
-        /* line 93, partials/_device.scss */
-        .device-background .device .screen {
-          height: 25em;
-          width: 14em;
-          background-image: url("/assets/discover-screenshot.png");
-          background-size: cover;
-          border-radius: 0.2em;
-          box-shadow: inset 0 1px 8px rgba(0, 0, 0, 0.5);
-          margin: auto; } }
+    position: relative;
+    -webkit-transform: perspective(800px) translateX(0px) translateY(-100px) translateZ(50px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    -moz-transform: perspective(800px) translateX(0px) translateY(-100px) translateZ(50px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    -ms-transform: perspective(800px) translateX(0px) translateY(-100px) translateZ(50px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    -o-transform: perspective(800px) translateX(0px) translateY(-100px) translateZ(50px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    transform: perspective(800px) translateX(0px) translateY(-100px) translateZ(50px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    background: white;
+    border: 1px solid gray;
+    border-radius: 1em;
+    display: block;
+    float: right;
+    margin-top: 5em;
+    margin-bottom: -12em;
+    margin-right: 5em;
+    padding: 2.8em 0;
+    width: 11.3em;
+    z-index: 99999; }
+    /* line 101, partials/_device.scss */
+    .device-background .device .screen {
+      height: 18.75em;
+      width: 10.5em;
+      background-image: url("/assets/discover-screenshot.png");
+      background-size: cover;
+      border-radius: 0.2em;
+      box-shadow: inset 0 1px 8px rgba(0, 0, 0, 0.5);
+      margin: auto; }
 
 /* line 3, partials/_work.scss */
 .work-wrap {
   max-width: 31.25em;
   margin-left: auto;
   margin-right: auto; }
-  /* line 15, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_clearfix.scss */
+  /* line 15, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_clearfix.scss */
   .work-wrap:after {
     content: "";
     display: table;
