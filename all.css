@@ -436,8 +436,8 @@ nav {
 
 /* line 1, partials/_device.scss */
 .device-background {
-  background: url("https://www.buddybounce.com/assets/home/background_mini_new-479dd159a054f34f5f4cd66d6416a245.jpg"), -webkit-linear-gradient(10deg, #0A120D, #162C4C), no-repeat #162C4C scroll;
-  background: url("https://www.buddybounce.com/assets/home/background_mini_new-479dd159a054f34f5f4cd66d6416a245.jpg"), linear-gradient(10deg, #0A120D, #162C4C), no-repeat #162C4C scroll;
+  background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png"), -webkit-linear-gradient(10deg, #0A120D, #162C4C), no-repeat #162C4C scroll;
+  background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png"), linear-gradient(10deg, #0A120D, #162C4C), no-repeat #162C4C scroll;
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 20em;
