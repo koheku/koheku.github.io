@@ -504,7 +504,6 @@ nav {
       margin-bottom: 1.5em; }
     /* line 69, partials/_device.scss */
     .device-background .device-text button {
-      margin-left: 20%;
       background-color: #DDD;
       border-radius: 3px;
       border: none;
@@ -547,7 +546,7 @@ nav {
         opacity: 0.5;
         cursor: not-allowed; }
   @media screen and (max-width: 500px) {
-    /* line 76, partials/_device.scss */
+    /* line 75, partials/_device.scss */
     .device-background .device-wrap {
       float: left;
       display: block;
@@ -557,7 +556,7 @@ nav {
       .device-background .device-wrap:last-child {
         margin-right: 0; } }
   @media screen and (min-width: 500px) {
-    /* line 76, partials/_device.scss */
+    /* line 75, partials/_device.scss */
     .device-background .device-wrap {
       float: left;
       display: block;
@@ -567,7 +566,7 @@ nav {
       .device-background .device-wrap:last-child {
         margin-right: 0; } }
   @media screen and (min-width: 53.75em) {
-    /* line 76, partials/_device.scss */
+    /* line 75, partials/_device.scss */
     .device-background .device-wrap {
       float: left;
       display: block;
@@ -576,7 +575,7 @@ nav {
       /* line 85, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/neat-1.7.0/app/assets/stylesheets/grid/_span-columns.scss */
       .device-background .device-wrap:last-child {
         margin-right: 0; } }
-  /* line 87, partials/_device.scss */
+  /* line 86, partials/_device.scss */
   .device-background .device-wrap .device {
     background: #DDD;
     border: 1px solid #DDD;
@@ -586,16 +585,16 @@ nav {
     width: 10.8em;
     margin: 0 auto; }
     @media screen and (min-width: 500px) {
-      /* line 87, partials/_device.scss */
+      /* line 86, partials/_device.scss */
       .device-background .device-wrap .device {
         margin: -2em 0 0 0;
         float: right; } }
     @media screen and (min-width: 53.75em) {
-      /* line 87, partials/_device.scss */
+      /* line 86, partials/_device.scss */
       .device-background .device-wrap .device {
         margin: -2em -4em 0 0;
         float: right; } }
-    /* line 106, partials/_device.scss */
+    /* line 105, partials/_device.scss */
     .device-background .device-wrap .device .screen {
       height: 17.73438em;
       width: 10em;
