@@ -25,7 +25,8 @@
 
   @include outer-container;
 
-  margin-top: 2em;
+  margin-top: 3em;
+  margin-bottom: 3em;
 
   .background {
     @include background-image(url($device-image));
@@ -134,6 +135,55 @@
         background-size: cover;
         border: 1px solid $light-gray;
         margin: auto;
+      }
+    }
+  }
+}
+
+.left {
+  // $device-screen-image: '/assets/mesvaccins-screenshot.png';
+  .device-background {
+    @include media($mobile) {
+      display:flex;
+      flex-flow: column;
+      .device-text{order:1;}
+      .device-wrap{order:2;}
+    }
+    .background {
+      background-image: none;
+    }
+    .device-text {
+      h5 {
+        @include media($medium-screen-up) {
+          text-align: right;
+        }
+        text-align: center;
+      }
+      p {
+        @include media($medium-screen-up) {
+          text-align: right;
+        }
+      }
+      a {
+        @include media($medium-screen-up) {
+          float: right;
+          margin: 0;
+        }
+      }
+    }
+    .device-wrap {
+      .device {
+        @include media($medium-screen-up) {
+          margin: -2em 0 0 0;
+          float: left;
+        }
+        @include media($large-screen-up) {
+          margin: -2em 0 0 -4em;
+          float: left;
+        }
+        .screen {
+          background-image: url('/assets/mesvaccins-screenshot.png');
+        }
       }
     }
   }
