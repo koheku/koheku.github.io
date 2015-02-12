@@ -405,6 +405,9 @@ nav {
     -webkit-transition: background-color 0.1s linear;
     -moz-transition: background-color 0.1s linear;
     transition: background-color 0.1s linear;
+    -webkit-transition: color 0.1s linear;
+    -moz-transition: color 0.1s linear;
+    transition: color 0.1s linear;
     display: inline-block;
     margin: 0.5rem 0.5rem;
     border: 1px solid #6a6a6a;
@@ -415,20 +418,20 @@ nav {
     text-align: center;
     height: 2.5em;
     width: 2.5em; }
-    /* line 19, partials/_nav.scss */
+    /* line 20, partials/_nav.scss */
     nav .logo:hover {
       background-color: #6a6a6a;
       color: white; }
-  /* line 25, partials/_nav.scss */
+  /* line 26, partials/_nav.scss */
   nav ul {
     display: inline-block;
     margin: 0.5rem 0 0.5rem 0;
     padding-bottom: 0.5rem;
     border-bottom: 1px solid #DDD; }
-    /* line 31, partials/_nav.scss */
+    /* line 32, partials/_nav.scss */
     nav ul a.current-nav-tab {
       color: #6a6a6a; }
-    /* line 35, partials/_nav.scss */
+    /* line 36, partials/_nav.scss */
     nav ul a {
       padding: 1rem;
       font-size: 1em;
@@ -497,56 +500,47 @@ nav {
     .device-background .device-text h5 {
       border-bottom: 1px solid rgba(255, 255, 255, 0.3);
       margin-bottom: 0.5em;
-      padding-bottom: 0.5em; }
-    /* line 64, partials/_device.scss */
+      padding-bottom: 0.5em;
+      text-align: center; }
+      @media screen and (min-width: 500px) {
+        /* line 58, partials/_device.scss */
+        .device-background .device-text h5 {
+          text-align: left; } }
+    /* line 68, partials/_device.scss */
     .device-background .device-text p {
       font-size: 0.9em;
-      margin-bottom: 1.5em; }
-    /* line 69, partials/_device.scss */
-    .device-background .device-text button {
-      background-color: #DDD;
-      border-radius: 3px;
-      border: none;
-      color: #333333;
-      display: inline-block;
-      font-size: inherit;
-      font-weight: bold;
-      padding: 7px 18px;
-      text-decoration: none;
-      background-clip: padding-box;
-      background-color: #DDD;
-      border-radius: 3px;
-      border: none;
-      color: #333333;
-      display: inline-block;
-      font-size: inherit;
-      font-weight: bold;
-      padding: 7px 18px;
-      text-decoration: none;
-      background-clip: padding-box;
-      padding: 0.7em 1em; }
-      /* line 352, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_button.scss */
-      .device-background .device-text button:hover:not(:disabled) {
-        background-color: #eaeaea;
-        cursor: pointer; }
-      /* line 363, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_button.scss */
-      .device-background .device-text button:active:not(:disabled), .device-background .device-text button:focus:not(:disabled) {
-        background-color: #d0d0d0;
-        cursor: pointer; }
-      /* line 352, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_button.scss */
-      .device-background .device-text button:hover:not(:disabled) {
-        background-color: #ebe9e9;
-        cursor: pointer; }
-      /* line 363, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_button.scss */
-      .device-background .device-text button:active:not(:disabled), .device-background .device-text button:focus:not(:disabled) {
-        background-color: #d0d0d0;
-        cursor: pointer; }
-      /* line 51, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_button.scss */
-      .device-background .device-text button:disabled {
-        opacity: 0.5;
-        cursor: not-allowed; }
+      margin-bottom: 1.5em;
+      text-align: center; }
+      @media screen and (min-width: 500px) {
+        /* line 68, partials/_device.scss */
+        .device-background .device-text p {
+          text-align: left; } }
+    /* line 78, partials/_device.scss */
+    .device-background .device-text a {
+      -webkit-transition: background-color 0.1s linear;
+      -moz-transition: background-color 0.1s linear;
+      transition: background-color 0.1s linear;
+      -webkit-transition: color 0.1s linear;
+      -moz-transition: color 0.1s linear;
+      transition: color 0.1s linear;
+      display: block;
+      padding: 0.2em 0.2em 0.3em 0.2em;
+      border: 2px solid white;
+      color: white;
+      border-radius: 100px;
+      width: 6em;
+      margin: 0 auto;
+      text-align: center; }
+      @media screen and (min-width: 500px) {
+        /* line 78, partials/_device.scss */
+        .device-background .device-text a {
+          margin: 0; } }
+      /* line 94, partials/_device.scss */
+      .device-background .device-text a:hover {
+        background-color: rgba(255, 255, 255, 0.6);
+        color: #333333; }
   @media screen and (max-width: 500px) {
-    /* line 75, partials/_device.scss */
+    /* line 101, partials/_device.scss */
     .device-background .device-wrap {
       float: left;
       display: block;
@@ -556,7 +550,7 @@ nav {
       .device-background .device-wrap:last-child {
         margin-right: 0; } }
   @media screen and (min-width: 500px) {
-    /* line 75, partials/_device.scss */
+    /* line 101, partials/_device.scss */
     .device-background .device-wrap {
       float: left;
       display: block;
@@ -566,7 +560,7 @@ nav {
       .device-background .device-wrap:last-child {
         margin-right: 0; } }
   @media screen and (min-width: 53.75em) {
-    /* line 75, partials/_device.scss */
+    /* line 101, partials/_device.scss */
     .device-background .device-wrap {
       float: left;
       display: block;
@@ -575,7 +569,7 @@ nav {
       /* line 85, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/neat-1.7.0/app/assets/stylesheets/grid/_span-columns.scss */
       .device-background .device-wrap:last-child {
         margin-right: 0; } }
-  /* line 86, partials/_device.scss */
+  /* line 112, partials/_device.scss */
   .device-background .device-wrap .device {
     background: #DDD;
     border: 1px solid #DDD;
@@ -583,18 +577,19 @@ nav {
     display: block;
     padding: 2.8em 0;
     width: 10.8em;
-    margin: 0 auto; }
+    margin: 0 auto;
+    box-shadow: 0px 3px 3px 0px #aaaaaa; }
     @media screen and (min-width: 500px) {
-      /* line 86, partials/_device.scss */
+      /* line 112, partials/_device.scss */
       .device-background .device-wrap .device {
         margin: -2em 0 0 0;
         float: right; } }
     @media screen and (min-width: 53.75em) {
-      /* line 86, partials/_device.scss */
+      /* line 112, partials/_device.scss */
       .device-background .device-wrap .device {
         margin: -2em -4em 0 0;
         float: right; } }
-    /* line 105, partials/_device.scss */
+    /* line 131, partials/_device.scss */
     .device-background .device-wrap .device .screen {
       height: 17.73438em;
       width: 10em;
