@@ -1,7 +1,6 @@
 // Typography
 $sans-serif: 'HelveticaNeue-Medium', $helvetica;
 $sans-serif-light: 'HelveticaNeue-Light', $sans-serif;
-$sans-serif-regular: 'HelveticaNeue-Regular', $sans-serif;
 $serif: $georgia;
 $base-font-family: $sans-serif;
 $header-font-family: $base-font-family;
@@ -28,6 +27,7 @@ $base-z-index: 0;
 $blue: #477DCA;
 $dark-gray: #333333;
 $medium-gray: #999;
+$dark-medium-gray: #4A4A4A;
 $light-gray: #DDD;
 $light-red: #FBE3E4;
 $light-yellow: #FFF6BF;

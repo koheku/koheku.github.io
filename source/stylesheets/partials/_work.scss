@@ -1,5 +1,26 @@
 @import "partials/device";
 
-.work-wrap {
+.work-intro {
   @include outer-container;
+  margin: 1em auto;
+
+  .wrap {
+    padding: 0 1.5em;
+
+    .text-wrap {
+      padding: 0 0.5em;
+      text-align: left;
+      border-left: 1px solid $base-accent-color;
+
+      .title {
+        font-family: $sans-serif;
+      }
+
+      .subtitle {
+        color: $dark-medium-gray;
+        font-family: $sans-serif-light;
+        font-size:0.9em;
+      }
+    }
+  }
 }

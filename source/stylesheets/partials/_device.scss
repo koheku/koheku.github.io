@@ -1,101 +1,113 @@
 .device-background {
 
-  ///////////////////////////////////////////////////////////////////////////////////
-  $base-border-radius: 3px !default;
-  $base-accent-color: #477DCA !default;
-  $large-screen: em(860) !default;
+/////////////////////////////////////////////////////////////////////////////////
 
-  p {
-    line-height: 1.5em;
-  }
-
-  h4 {
-    font-size: 1.5em;
-    margin: 0;
-  }
-
-  //////////////////////////////////////////////////////////////////////////////////
-
-  $device-padding-vertical: 5em;
-  $device-padding-horizontal: 0.4em;
-  $device-screen-width: 14em;
-  $device-screen-height: 25em;
-  $device-background: darken(gray, 40%);
-  $device-backside-background: darken($device-background, 10%);
-  $device-text-color: white;
+  // .device-background
+  $device-image: '/assets/buddybounce-background.jpg';
   $device-background-top: #162C4C; 
   $device-background-bottom: #0A120D;
-  $gradient-angle: 10deg;
-  $device-image: 'https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png';
-  $device-screen-image: '/assets/discover-screenshot.png';
+  $gradient-angle: 0deg;
 
-  @include background(url($device-image), linear-gradient($gradient-angle, $device-background-bottom, $device-background-top), no-repeat $device-background-top scroll);
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 20em;
-  width: 100%;
+  // .device-background .device-text
+  $device-text-color: white;
+
+  // .device
+  $device-padding-vertical: 2.8em;
+  $device-padding-horizontal: 0.4em;
+  $device-background: $light-gray;
+
+  // .device .screen
+  $device-screen-image: '/assets/discover-screenshot.png';
+  $device-screen-width: 10em;
+  $device-screen-height: $device-screen-width * (1135/640);
+
+/////////////////////////////////////////////////////////////////////////////////
+
+  @include outer-container;
+
+  margin-top: 2em;
+
+  .background {
+    @include background-image(url($device-image));
+    background-color: $dark-gray;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:absolute;
+    min-height: 20em;
+    left:0;
+    right:0;
+    z-index: -1;
+  }
 
   .device-text {
-    color: $device-text-color;
-    padding: 2em;
 
-    @include media($large-screen) {
-      float: left;
-      max-width: 50%;
-      padding: 4em;
+    @include media($mobile) {
+      @include span-columns(4);
     }
+    @include media($medium-screen-up) {
+      @include span-columns(2);
+    }
+    @include media($large-screen-up) {
+      @include span-columns(4);
+    }
+    color: $device-text-color;
+    padding: 1.5em;
+    display: block;
+    margin-bottom: 1em;
 
-    h4 {
+    h5 {
       border-bottom: 1px solid transparentize($device-text-color, 0.7);
       margin-bottom: 0.5em;
       padding-bottom: 0.5em;
     }
 
     p {
+      font-size: 0.9em;
       margin-bottom: 1.5em;
     }
 
     button {
+      margin-left: 20%;
       @include button(flat, $base-accent-color);
       padding: 0.7em 1em;
     }
   }
 
-  .device {
-    display: none;
-    position: relative;
+  .device-wrap {
+    @include media($mobile) {
+      @include span-columns(4);
+    }
+    @include media($medium-screen-up) {
+      @include span-columns(2);
+    }
+    @include media($large-screen-up) {
+      @include span-columns(4);
+    }
 
-    @include media($large-screen) {
-      @include transform(
-      perspective(800px) 
-      translateX(0px) 
-      translateY(-100px) 
-      translateZ(50px) 
-      rotateX(0deg) 
-      rotateY(-20deg) 
-      rotateZ(-0deg));
+    .device {
+      @include media($medium-screen-up) {
+        margin: -2em 0 0 0;
+        float: right;
+      }
+      @include media($large-screen-up) {
+        margin: -2em -4em 0 0;
+        float: right;
+      }
+
       background: $device-background;
-      border-radius: 2em;
-      box-shadow: 
-      1px 0px lighten($device-backside-background, 20%), 
-      4px 0px lighten($device-backside-background, 2%),
-      7px 0px $device-backside-background,
-      10px 0px $device-backside-background,
-      13px 0px $device-backside-background;
+      border: 1px solid $light-gray;
+      border-radius: 1em;
       display: block;
-      float: right;
-      margin-bottom: -12em;
-      margin-right: 5em;
       padding: $device-padding-vertical 0;
       width: $device-screen-width + (2 * $device-padding-horizontal);
-      z-index: 99999;
+      margin: 0 auto;
+
 
       .screen {
         @include size($device-screen-width $device-screen-height);
         background-image: url($device-screen-image);
         background-size: cover;
-        border-radius: 0.2em;
-        box-shadow: inset 0 1px 8px transparentize(black, 0.5);
+        border: 1px solid $light-gray;
         margin: auto;
       }
     }

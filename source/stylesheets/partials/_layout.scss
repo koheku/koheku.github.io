@@ -29,10 +29,10 @@
       .text-wrap {
         padding: 0 0.5em;
         text-align: left;
-        font-family: $sans-serif-regular;
+        font-family: $sans-serif;
         border-left: 1px solid $base-accent-color;
         .subtitle {
-          color: #4A4A4A;
+          color: $dark-medium-gray;
           font-family: $sans-serif-light;
           font-size:0.9em;
         }
