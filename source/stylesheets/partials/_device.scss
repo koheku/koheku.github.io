@@ -1,49 +1,68 @@
-.device-background {
+.case-study-summary {
 
 /////////////////////////////////////////////////////////////////////////////////
 
-  // .device-background
-  $device-image: '/assets/buddybounce-background.jpg';
-  $device-background-top: #162C4C; 
-  $device-background-bottom: #0A120D;
-  $gradient-angle: 0deg;
+  // .case-study-summary
+  $case-study-summary-padding-top: 3em;
+  $case-study-summary-padding-bottom: 3em;
 
-  // .device-background .device-text
+  // .background
+  $background-placeholder-color: $dark-gray;
+  $background-height: 20em;
+  $buddybounce-background-image: '/assets/buddybounce-background.jpg';
+
+  // .device-text
   $device-text-color: white;
 
   // .device
   $device-padding-vertical: 2.8em;
   $device-padding-horizontal: 0.4em;
-  $device-background: $light-gray;
+  $device-bezel-color: $light-gray;
 
-  // .device .screen
-  $device-screen-image: '/assets/discover-screenshot.png';
+  // .screen
+  $buddybounce-screenshot: '/assets/discover-screenshot.png';
+  $mesvaccins-screenshot: '/assets/mesvaccins-screenshot.png';
   $device-screen-width: 10em;
   $device-screen-height: $device-screen-width * (1135/640);
 
 /////////////////////////////////////////////////////////////////////////////////
 
   @include outer-container;
-
-  margin-top: 3em;
-  margin-bottom: 3em;
+  @include media($mobile) {
+    display:flex;
+    flex-flow: column;
+    .device-text-align-right{order:1;}
+    .device-text-align-left{order:1;}
+    .device-wrap{order:2;}
+  }
+  margin-top: $case-study-summary-padding-top;
+  margin-bottom: $case-study-summary-padding-bottom;
 
   .background {
-    @include background-image(url($device-image));
-    background-color: $dark-gray;
+    background-color: $background-placeholder-color;
     background-repeat: no-repeat;
     background-size: cover;
     position:absolute;
-    min-height: 20em;
+    height: $background-height;
     left:0;
     right:0;
     z-index: -1;
   }
 
-  .device-text {
+  .background-mesvaccins {
+    @extend .background;
+    background-image: none;
+  }
 
+  .background-buddybounce {
+    @extend .background;
+    @include background-image(url($buddybounce-background-image));
+  }
+
+  .device-text-align-left {
     @include media($mobile) {
       @include span-columns(4);
+      @include order(1);
     }
     @include media($medium-screen-up) {
       @include span-columns(2);
@@ -99,6 +118,26 @@
     }
   }
 
+  .device-text-align-right {
+    @extend .device-text-align-left;
+    h5 {
+      @include media($medium-screen-up) {
+        text-align: right;
+      }
+    }
+    p {
+      @include media($medium-screen-up) {
+        text-align: right;
+      }
+    }
+    a {
+      @include media($medium-screen-up) {
+        float: right;
+        margin: 0;
+      }
+    }
+  }
+
   .device-wrap {
     @include media($mobile) {
       @include span-columns(4);
@@ -110,81 +149,43 @@
       @include span-columns(4);
     }
 
-    .device {
+    .device-align-right {
       @include media($medium-screen-up) {
         margin: -2em 0 0 0;
         float: right;
       }
-      @include media($large-screen-up) {
-        margin: -2em -4em 0 0;
-        float: right;
-      }
-
-      background: $device-background;
-      border: 1px solid $light-gray;
+      background: $device-bezel-color;
       border-radius: 1em;
       display: block;
       padding: $device-padding-vertical 0;
       width: $device-screen-width + (2 * $device-padding-horizontal);
       margin: 0 auto;
-      box-shadow: 0px 3px 3px 0px darken($device-background, 20%);
+      box-shadow: 0px 3px 3px 0px darken($device-bezel-color, 20%);
+    }
 
-      .screen {
-        @include size($device-screen-width $device-screen-height);
-        background-image: url($device-screen-image);
-        background-size: cover;
-        border: 1px solid $light-gray;
-        margin: auto;
+    .device-align-left {
+      @extend .device-align-right;
+      @include media($medium-screen-up) {
+        margin: -2em 0 0 0;
+        float: left;
       }
     }
   }
-}
 
-.left {
-  // $device-screen-image: '/assets/mesvaccins-screenshot.png';
-  .device-background {
-    @include media($mobile) {
-      display:flex;
-      flex-flow: column;
-      .device-text{order:1;}
-      .device-wrap{order:2;}
-    }
-    .background {
-      background-image: none;
-    }
-    .device-text {
-      h5 {
-        @include media($medium-screen-up) {
-          text-align: right;
-        }
-        text-align: center;
-      }
-      p {
-        @include media($medium-screen-up) {
-          text-align: right;
-        }
-      }
-      a {
-        @include media($medium-screen-up) {
-          float: right;
-          margin: 0;
-        }
-      }
-    }
-    .device-wrap {
-      .device {
-        @include media($medium-screen-up) {
-          margin: -2em 0 0 0;
-          float: left;
-        }
-        @include media($large-screen-up) {
-          margin: -2em 0 0 -4em;
-          float: left;
-        }
-        .screen {
-          background-image: url('/assets/mesvaccins-screenshot.png');
-        }
-      }
-    }
+  .screen {
+    @include size($device-screen-width $device-screen-height);
+    background-size: cover;
+    border: 1px solid $light-gray;
+    margin: auto;
+  }
+
+  .screen-mesvaccins {
+    @extend .screen;
+    background-image: url($mesvaccins-screenshot);
+  }
+
+  .screen-buddybounce {
+    @extend .screen;
+    background-image: url($buddybounce-screenshot);
   }
 }
