@@ -56,20 +56,45 @@
     margin-bottom: 1em;
 
     h5 {
+      @include media($medium-screen-up) {
+        text-align: left;
+      }
       border-bottom: 1px solid transparentize($device-text-color, 0.7);
       margin-bottom: 0.5em;
       padding-bottom: 0.5em;
+      text-align: center;
     }
 
     p {
+      @include media($medium-screen-up) {
+        text-align: left;
+      }
       font-size: 0.9em;
       margin-bottom: 1.5em;
+      text-align: center;
     }
 
-    button {
-      margin-left: 20%;
-      @include button(flat, $base-accent-color);
-      padding: 0.7em 1em;
+    $seemore-button-color: white;
+    a {
+      @include transition(background-color 0.1s linear);
+      @include transition(color 0.1s linear);
+      @include media($medium-screen-up) {
+        margin: 0;
+      }
+
+      display: block;
+      padding: 0.2em 0.2em 0.3em 0.2em;
+      border: 2px solid $seemore-button-color;
+      color: $seemore-button-color;
+      border-radius: 100px;
+      width: 6em;
+      margin: 0 auto;
+      text-align: center;
+
+      &:hover {
+        background-color: transparentize($seemore-button-color, 0.4);
+        color: $dark-gray;
+      }
     }
   }
 
@@ -101,7 +126,7 @@
       padding: $device-padding-vertical 0;
       width: $device-screen-width + (2 * $device-padding-horizontal);
       margin: 0 auto;
-
+      box-shadow: 0px 3px 3px 0px darken($device-background, 20%);
 
       .screen {
         @include size($device-screen-width $device-screen-height);

@@ -4,6 +4,7 @@ nav {
 
   .logo {
     @include transition(background-color 0.1s linear);
+    @include transition(color 0.1s linear);
 
     display: inline-block;
     margin: 0.5rem 0.5rem;
