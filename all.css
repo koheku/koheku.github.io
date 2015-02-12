@@ -438,86 +438,112 @@ nav {
       text-transform: uppercase; }
 
 /* line 1, partials/_device.scss */
-.device-background {
+.case-study-summary {
   max-width: 31.25em;
   margin-left: auto;
   margin-right: auto;
   margin-top: 3em;
   margin-bottom: 3em; }
   /* line 15, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_clearfix.scss */
-  .device-background:after {
+  .case-study-summary:after {
     content: "";
     display: table;
     clear: both; }
-  /* line 31, partials/_device.scss */
-  .device-background .background {
-    background-image: url("/assets/buddybounce-background.jpg");
-    background-image: url("/assets/buddybounce-background.jpg");
+  @media screen and (max-width: 500px) {
+    /* line 1, partials/_device.scss */
+    .case-study-summary {
+      display: flex;
+      flex-flow: column; }
+      /* line 34, partials/_device.scss */
+      .case-study-summary .device-text-align-right {
+        order: 1; }
+      /* line 35, partials/_device.scss */
+      .case-study-summary .device-text-align-left, .case-study-summary .device-text-align-right {
+        order: 1; }
+      /* line 36, partials/_device.scss */
+      .case-study-summary .device-wrap {
+        order: 2; } }
+  /* line 41, partials/_device.scss */
+  .case-study-summary .background, .case-study-summary .background-mesvaccins, .case-study-summary .background-buddybounce {
     background-color: #333333;
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
-    min-height: 20em;
+    height: 20em;
     left: 0;
     right: 0;
     z-index: -1; }
-  /* line 43, partials/_device.scss */
-  .device-background .device-text {
+  /* line 52, partials/_device.scss */
+  .case-study-summary .background-mesvaccins {
+    background-image: none; }
+  /* line 57, partials/_device.scss */
+  .case-study-summary .background-buddybounce {
+    background-image: url("/assets/buddybounce-background.jpg");
+    background-image: url("/assets/buddybounce-background.jpg"); }
+  /* line 62, partials/_device.scss */
+  .case-study-summary .device-text-align-left, .case-study-summary .device-text-align-right {
     color: white;
     padding: 1.5em;
     display: block;
     margin-bottom: 1em; }
     @media screen and (max-width: 500px) {
-      /* line 43, partials/_device.scss */
-      .device-background .device-text {
+      /* line 62, partials/_device.scss */
+      .case-study-summary .device-text-align-left, .case-study-summary .device-text-align-right {
         float: left;
         display: block;
         margin-right: 0%;
-        width: 100%; }
+        width: 100%;
+        -webkit-box-ordinal-group: 1;
+        -moz-box-ordinal-group: 1;
+        box-ordinal-group: 1;
+        -webkit-order: 1;
+        -moz-order: 1;
+        order: 1;
+        -ms-flex-order: 1; }
         /* line 85, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/neat-1.7.0/app/assets/stylesheets/grid/_span-columns.scss */
-        .device-background .device-text:last-child {
+        .case-study-summary .device-text-align-left:last-child, .case-study-summary .device-text-align-right:last-child {
           margin-right: 0; } }
     @media screen and (min-width: 500px) {
-      /* line 43, partials/_device.scss */
-      .device-background .device-text {
+      /* line 62, partials/_device.scss */
+      .case-study-summary .device-text-align-left, .case-study-summary .device-text-align-right {
         float: left;
         display: block;
         margin-right: 0%;
         width: 50%; }
         /* line 85, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/neat-1.7.0/app/assets/stylesheets/grid/_span-columns.scss */
-        .device-background .device-text:last-child {
+        .case-study-summary .device-text-align-left:last-child, .case-study-summary .device-text-align-right:last-child {
           margin-right: 0; } }
     @media screen and (min-width: 53.75em) {
-      /* line 43, partials/_device.scss */
-      .device-background .device-text {
+      /* line 62, partials/_device.scss */
+      .case-study-summary .device-text-align-left, .case-study-summary .device-text-align-right {
         float: left;
         display: block;
         margin-right: 0%;
         width: 50%; }
         /* line 85, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/neat-1.7.0/app/assets/stylesheets/grid/_span-columns.scss */
-        .device-background .device-text:last-child {
+        .case-study-summary .device-text-align-left:last-child, .case-study-summary .device-text-align-right:last-child {
           margin-right: 0; } }
-    /* line 59, partials/_device.scss */
-    .device-background .device-text h5 {
+    /* line 78, partials/_device.scss */
+    .case-study-summary .device-text-align-left h5, .case-study-summary .device-text-align-right h5 {
       border-bottom: 1px solid rgba(255, 255, 255, 0.3);
       margin-bottom: 0.5em;
       padding-bottom: 0.5em;
       text-align: center; }
       @media screen and (min-width: 500px) {
-        /* line 59, partials/_device.scss */
-        .device-background .device-text h5 {
+        /* line 78, partials/_device.scss */
+        .case-study-summary .device-text-align-left h5, .case-study-summary .device-text-align-right h5 {
           text-align: left; } }
-    /* line 69, partials/_device.scss */
-    .device-background .device-text p {
+    /* line 88, partials/_device.scss */
+    .case-study-summary .device-text-align-left p, .case-study-summary .device-text-align-right p {
       font-size: 0.9em;
       margin-bottom: 1.5em;
       text-align: center; }
       @media screen and (min-width: 500px) {
-        /* line 69, partials/_device.scss */
-        .device-background .device-text p {
+        /* line 88, partials/_device.scss */
+        .case-study-summary .device-text-align-left p, .case-study-summary .device-text-align-right p {
           text-align: left; } }
-    /* line 79, partials/_device.scss */
-    .device-background .device-text a {
+    /* line 98, partials/_device.scss */
+    .case-study-summary .device-text-align-left a, .case-study-summary .device-text-align-right a {
       -webkit-transition: background-color 0.1s linear;
       -moz-transition: background-color 0.1s linear;
       transition: background-color 0.1s linear;
@@ -533,47 +559,59 @@ nav {
       margin: 0 auto;
       text-align: center; }
       @media screen and (min-width: 500px) {
-        /* line 79, partials/_device.scss */
-        .device-background .device-text a {
+        /* line 98, partials/_device.scss */
+        .case-study-summary .device-text-align-left a, .case-study-summary .device-text-align-right a {
           margin: 0; } }
-      /* line 95, partials/_device.scss */
-      .device-background .device-text a:hover {
+      /* line 114, partials/_device.scss */
+      .case-study-summary .device-text-align-left a:hover, .case-study-summary .device-text-align-right a:hover {
         background-color: rgba(255, 255, 255, 0.6);
         color: #333333; }
+  @media screen and (min-width: 500px) {
+    /* line 123, partials/_device.scss */
+    .case-study-summary .device-text-align-right h5 {
+      text-align: right; } }
+  @media screen and (min-width: 500px) {
+    /* line 128, partials/_device.scss */
+    .case-study-summary .device-text-align-right p {
+      text-align: right; } }
+  @media screen and (min-width: 500px) {
+    /* line 133, partials/_device.scss */
+    .case-study-summary .device-text-align-right a {
+      float: right;
+      margin: 0; } }
   @media screen and (max-width: 500px) {
-    /* line 102, partials/_device.scss */
-    .device-background .device-wrap {
+    /* line 141, partials/_device.scss */
+    .case-study-summary .device-wrap {
       float: left;
       display: block;
       margin-right: 0%;
       width: 100%; }
       /* line 85, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/neat-1.7.0/app/assets/stylesheets/grid/_span-columns.scss */
-      .device-background .device-wrap:last-child {
+      .case-study-summary .device-wrap:last-child {
         margin-right: 0; } }
   @media screen and (min-width: 500px) {
-    /* line 102, partials/_device.scss */
-    .device-background .device-wrap {
+    /* line 141, partials/_device.scss */
+    .case-study-summary .device-wrap {
       float: left;
       display: block;
       margin-right: 0%;
       width: 50%; }
       /* line 85, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/neat-1.7.0/app/assets/stylesheets/grid/_span-columns.scss */
-      .device-background .device-wrap:last-child {
+      .case-study-summary .device-wrap:last-child {
         margin-right: 0; } }
   @media screen and (min-width: 53.75em) {
-    /* line 102, partials/_device.scss */
-    .device-background .device-wrap {
+    /* line 141, partials/_device.scss */
+    .case-study-summary .device-wrap {
       float: left;
       display: block;
       margin-right: 0%;
       width: 50%; }
       /* line 85, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/neat-1.7.0/app/assets/stylesheets/grid/_span-columns.scss */
-      .device-background .device-wrap:last-child {
+      .case-study-summary .device-wrap:last-child {
         margin-right: 0; } }
-  /* line 113, partials/_device.scss */
-  .device-background .device-wrap .device {
+  /* line 152, partials/_device.scss */
+  .case-study-summary .device-wrap .device-align-right, .case-study-summary .device-wrap .device-align-left {
     background: #DDD;
-    border: 1px solid #DDD;
     border-radius: 1em;
     display: block;
     padding: 2.8em 0;
@@ -581,67 +619,28 @@ nav {
     margin: 0 auto;
     box-shadow: 0px 3px 3px 0px #aaaaaa; }
     @media screen and (min-width: 500px) {
-      /* line 113, partials/_device.scss */
-      .device-background .device-wrap .device {
+      /* line 152, partials/_device.scss */
+      .case-study-summary .device-wrap .device-align-right, .case-study-summary .device-wrap .device-align-left {
         margin: -2em 0 0 0;
         float: right; } }
-    @media screen and (min-width: 53.75em) {
-      /* line 113, partials/_device.scss */
-      .device-background .device-wrap .device {
-        margin: -2em -4em 0 0;
-        float: right; } }
-    /* line 132, partials/_device.scss */
-    .device-background .device-wrap .device .screen {
-      height: 17.73438em;
-      width: 10em;
-      background-image: url("/assets/discover-screenshot.png");
-      background-size: cover;
-      border: 1px solid #DDD;
-      margin: auto; }
-
-@media screen and (max-width: 500px) {
-  /* line 145, partials/_device.scss */
-  .left .device-background {
-    display: flex;
-    flex-flow: column; }
-    /* line 149, partials/_device.scss */
-    .left .device-background .device-text {
-      order: 1; }
-    /* line 150, partials/_device.scss */
-    .left .device-background .device-wrap {
-      order: 2; } }
-/* line 152, partials/_device.scss */
-.left .device-background .background {
-  background-image: none; }
-/* line 156, partials/_device.scss */
-.left .device-background .device-text h5 {
-  text-align: center; }
   @media screen and (min-width: 500px) {
-    /* line 156, partials/_device.scss */
-    .left .device-background .device-text h5 {
-      text-align: right; } }
-@media screen and (min-width: 500px) {
-  /* line 162, partials/_device.scss */
-  .left .device-background .device-text p {
-    text-align: right; } }
-@media screen and (min-width: 500px) {
-  /* line 167, partials/_device.scss */
-  .left .device-background .device-text a {
-    float: right;
-    margin: 0; } }
-@media screen and (min-width: 500px) {
+    /* line 166, partials/_device.scss */
+    .case-study-summary .device-wrap .device-align-left {
+      margin: -2em 0 0 0;
+      float: left; } }
   /* line 175, partials/_device.scss */
-  .left .device-background .device-wrap .device {
-    margin: -2em 0 0 0;
-    float: left; } }
-@media screen and (min-width: 53.75em) {
-  /* line 175, partials/_device.scss */
-  .left .device-background .device-wrap .device {
-    margin: -2em 0 0 -4em;
-    float: left; } }
-/* line 184, partials/_device.scss */
-.left .device-background .device-wrap .device .screen {
-  background-image: url("/assets/mesvaccins-screenshot.png"); }
+  .case-study-summary .screen, .case-study-summary .screen-mesvaccins, .case-study-summary .screen-buddybounce {
+    height: 17.73438em;
+    width: 10em;
+    background-size: cover;
+    border: 1px solid #DDD;
+    margin: auto; }
+  /* line 182, partials/_device.scss */
+  .case-study-summary .screen-mesvaccins {
+    background-image: url("/assets/mesvaccins-screenshot.png"); }
+  /* line 187, partials/_device.scss */
+  .case-study-summary .screen-buddybounce {
+    background-image: url("/assets/discover-screenshot.png"); }
 
 /* line 3, partials/_work.scss */
 .work-intro {
