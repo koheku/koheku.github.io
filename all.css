@@ -357,6 +357,7 @@ html {
     margin-right: 0%;
     width: 16.66667%;
     margin-top: -2em;
+    margin-bottom: 2em;
     padding-right: 1em; }
     /* line 85, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/neat-1.7.0/app/assets/stylesheets/grid/_span-columns.scss */
     .profile-wrap .iphone-side-images:last-child {
@@ -371,22 +372,22 @@ html {
         /* line 85, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/neat-1.7.0/app/assets/stylesheets/grid/_span-columns.scss */
         .profile-wrap .iphone-side-images:last-child {
           margin-right: 0; } }
-    /* line 52, partials/_layout.scss */
+    /* line 53, partials/_layout.scss */
     .profile-wrap .iphone-side-images img {
       float: left;
       height: 20em; }
 
-/* line 59, partials/_layout.scss */
+/* line 60, partials/_layout.scss */
 body {
   margin: 0;
   font-size: large; }
 
 @media (max-width: 1000px) {
-  /* line 65, partials/_layout.scss */
+  /* line 66, partials/_layout.scss */
   body {
     font-size: 100%; } }
 @media (max-width: 500px) {
-  /* line 69, partials/_layout.scss */
+  /* line 70, partials/_layout.scss */
   body {
     font-size: 100%; } }
 /* line 1, partials/_nav.scss */
