@@ -27,6 +27,16 @@
     z-index: -1;
   }
 
+  .background-buddybounce {
+    @extend .background;
+    background-color: darken($bb-yellow, 20%);
+  }
+
+  .background-mesvaccins {
+    @extend .background;
+    background-color: darken($mv-blue, 15%);
+  }
+
   .study-text {
     color: $study-text-color;
     padding: 1.5em;
