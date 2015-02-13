@@ -1,0 +1,128 @@
+.case-study {
+  // .case-study
+  $case-study-padding-top: 3em;
+  $case-study-padding-bottom: 3em;
+
+  // .background
+  $background-placeholder-color: $dark-gray;
+  $background-height: 20em;
+
+  // .study-text
+  $study-text-color: white;
+  $study-link-color: white;
+
+  @include outer-container;
+  margin-top: $case-study-padding-top;
+  margin-bottom: $case-study-padding-bottom;
+
+  .background {
+    background-color: $background-placeholder-color;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    position: absolute;
+    height: $background-height;
+    left: 0;
+    right: 0;
+    z-index: -1;
+  }
+
+  .study-text {
+    color: $study-text-color;
+    padding: 1.5em;
+    display: block;
+    margin-bottom: 1em;
+
+    h5 {
+      border-bottom: 1px solid transparentize($study-text-color, 0.7);
+      margin-bottom: 0.5em;
+      padding-bottom: 0.5em;
+      text-align: center;
+    }
+
+    p {
+      font-size: 0.9em;
+      margin-bottom: 1.5em;
+      text-align: center;
+    }
+
+    a {
+      @include transition(background-color 0.1s linear);
+      @include transition(color 0.1s linear);
+
+      display: block;
+      padding: 0.2em 0.2em 0.3em 0.2em;
+      border: 2px solid $study-link-color;
+      color: $study-link-color;
+      border-radius: 100px;
+      width: 6em;
+      margin: 0 auto;
+      text-align: center;
+
+      &:hover {
+        background-color: transparentize($study-link-color, 0.4);
+        color: $dark-gray;
+      }
+    }
+  }
+
+  .study-text-align-left {
+    @extend .study-text;
+    @include media($mobile) {
+      @include span-columns(4);
+    }
+    @include media($medium-screen-up) {
+      @include span-columns(2);
+      @include shift(2);
+    }
+    @include media($large-screen-up) {
+      @include span-columns(4);
+      @include shift(4);
+    }
+    h5 {
+      @include media($medium-screen-up) {
+        text-align: left;
+      }
+    }
+    p {
+      @include media($medium-screen-up) {
+        text-align: left;
+      }
+    }
+    a {
+      @include media($medium-screen-up) {
+        float: left;
+      }
+    }
+  }
+
+  .study-text-align-right {
+    @extend .study-text;
+    @include media($mobile) {
+      @include span-columns(4);
+    }
+    @include media($medium-screen-up) {
+      @include span-columns(2);
+      @include shift(0);
+    }
+    @include media($large-screen-up) {
+      @include span-columns(4);
+      @include shift(0);
+    }
+    h5 {
+      @include media($medium-screen-up) {
+        text-align: right;
+      }
+    }
+    p {
+      @include media($medium-screen-up) {
+        text-align: right;
+      }
+    }
+    a {
+      @include media($medium-screen-up) {
+        float: right;
+      }
+    }
+  }
+}
