@@ -12,8 +12,9 @@
   $study-link-color: white;
 
   @include outer-container;
-  margin-top: $case-study-padding-top;
+
   margin-bottom: $case-study-padding-bottom;
+  margin-top: $case-study-padding-top;
 
   .background {
     background-color: $background-placeholder-color;

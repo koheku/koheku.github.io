@@ -58,14 +58,11 @@
 }
 
 body {
+  @include media($medium-screen-up) {
+    font-size:110%;
+  }
+  @include media($large-screen-up) {
+    font-size:120%;
+  }
   margin: 0;
-  font-size: large;
-}
-
-@media (max-width: 1000px) {
-  body { font-size: 100%; }
-}
-
-@media (max-width: 500px) {
-  body { font-size: 100%; }
 }

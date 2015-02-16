@@ -4,24 +4,21 @@
 .work-intro {
   @include outer-container;
   margin: 1em auto;
+  padding-left: 0.5em;
+}
 
-  .wrap {
-    padding: 0 1.5em;
+.work-intro-inner-border-wrap {
+  border-left: 1px solid $base-accent-color;
+  padding: 0 0.5em;
+}
 
-    .text-wrap {
-      padding: 0 0.5em;
-      text-align: left;
-      border-left: 1px solid $base-accent-color;
+.work-intro-title-text {
+  text-align: left;
+}
 
-      .title {
-        font-family: $sans-serif;
-      }
-
-      .subtitle {
-        color: $dark-medium-gray;
-        font-family: $sans-serif-light;
-        font-size:0.9em;
-      }
-    }
-  }
+.work-intro-subtitle-text {
+  color: $dark-medium-gray;
+  font-family: $sans-serif-light;
+  font-size:0.9em;
+  margin:0;
 }
