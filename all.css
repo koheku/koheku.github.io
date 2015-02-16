@@ -379,17 +379,16 @@ html {
 
 /* line 60, partials/_layout.scss */
 body {
-  margin: 0;
-  font-size: large; }
+  margin: 0; }
+  @media screen and (min-width: 500px) {
+    /* line 60, partials/_layout.scss */
+    body {
+      font-size: 110%; } }
+  @media screen and (min-width: 53.75em) {
+    /* line 60, partials/_layout.scss */
+    body {
+      font-size: 120%; } }
 
-@media (max-width: 1000px) {
-  /* line 66, partials/_layout.scss */
-  body {
-    font-size: 100%; } }
-@media (max-width: 500px) {
-  /* line 70, partials/_layout.scss */
-  body {
-    font-size: 100%; } }
 /* line 1, partials/_nav.scss */
 nav {
   max-width: 31.25em;
@@ -438,288 +437,286 @@ nav {
       font-size: 1em;
       text-transform: uppercase; }
 
-/* line 1, partials/_case-study.scss */
-.case-study {
-  max-width: 31.25em;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 3em;
-  margin-bottom: 3em; }
-  /* line 15, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_clearfix.scss */
-  .case-study:after {
-    content: "";
-    display: table;
-    clear: both; }
-  /* line 18, partials/_case-study.scss */
-  .case-study .background, .case-study .background-buddybounce, .case-study .background-mesvaccins {
-    background-color: #333333;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: cover;
-    position: absolute;
-    height: 20em;
-    left: 0;
-    right: 0;
-    z-index: -1; }
-  /* line 30, partials/_case-study.scss */
-  .case-study .background-buddybounce {
-    background-color: #d47f00; }
-    /* line 33, partials/_case-study.scss */
-    .case-study .background-buddybounce:after {
-      content: ' ';
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      background: rgba(0, 0, 0, 0.5);
-      opacity: 1; }
-  /* line 43, partials/_case-study.scss */
-  .case-study .background-mesvaccins {
-    background-color: #10294d; }
-  /* line 48, partials/_case-study.scss */
-  .case-study .study-text, .case-study .study-text-align-left, .case-study .study-text-align-right {
-    color: white;
-    padding: 1.5em;
-    display: block;
-    margin-bottom: 1em; }
-    /* line 54, partials/_case-study.scss */
-    .case-study .study-text h5, .case-study .study-text-align-left h5, .case-study .study-text-align-right h5 {
-      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-      margin-bottom: 0.5em;
-      padding-bottom: 0.5em;
-      text-align: center; }
-    /* line 61, partials/_case-study.scss */
-    .case-study .study-text p, .case-study .study-text-align-left p, .case-study .study-text-align-right p {
-      font-size: 0.9em;
-      margin-bottom: 1.5em;
-      text-align: center; }
-    /* line 67, partials/_case-study.scss */
-    .case-study .study-text a, .case-study .study-text-align-left a, .case-study .study-text-align-right a {
-      -webkit-transition: background-color 0.1s linear;
-      -moz-transition: background-color 0.1s linear;
-      transition: background-color 0.1s linear;
-      -webkit-transition: color 0.1s linear;
-      -moz-transition: color 0.1s linear;
-      transition: color 0.1s linear;
-      display: block;
-      padding: 0.2em 0.2em 0.3em 0.2em;
-      border: 2px solid white;
-      color: white;
-      border-radius: 100px;
-      width: 6em;
-      margin: 0 auto;
-      text-align: center; }
-      /* line 80, partials/_case-study.scss */
-      .case-study .study-text a:hover, .case-study .study-text-align-left a:hover, .case-study .study-text-align-right a:hover {
-        background-color: rgba(255, 255, 255, 0.6);
-        color: #333333; }
-  @media screen and (max-width: 500px) {
-    /* line 87, partials/_case-study.scss */
-    .case-study .study-text-align-left {
-      float: left;
-      display: block;
-      margin-right: 0%;
-      width: 100%; }
-      /* line 85, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/neat-1.7.0/app/assets/stylesheets/grid/_span-columns.scss */
-      .case-study .study-text-align-left:last-child {
-        margin-right: 0; } }
-  @media screen and (min-width: 500px) {
-    /* line 87, partials/_case-study.scss */
-    .case-study .study-text-align-left {
-      float: left;
-      display: block;
-      margin-right: 0%;
-      width: 50%;
-      margin-left: 50%; }
-      /* line 85, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/neat-1.7.0/app/assets/stylesheets/grid/_span-columns.scss */
-      .case-study .study-text-align-left:last-child {
-        margin-right: 0; } }
-  @media screen and (min-width: 53.75em) {
-    /* line 87, partials/_case-study.scss */
-    .case-study .study-text-align-left {
-      float: left;
-      display: block;
-      margin-right: 0%;
-      width: 50%;
-      margin-left: 50%; }
-      /* line 85, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/neat-1.7.0/app/assets/stylesheets/grid/_span-columns.scss */
-      .case-study .study-text-align-left:last-child {
-        margin-right: 0; } }
-  @media screen and (min-width: 500px) {
-    /* line 100, partials/_case-study.scss */
-    .case-study .study-text-align-left h5 {
-      text-align: left; } }
-  @media screen and (min-width: 500px) {
-    /* line 105, partials/_case-study.scss */
-    .case-study .study-text-align-left p {
-      text-align: left; } }
-  @media screen and (min-width: 500px) {
-    /* line 110, partials/_case-study.scss */
-    .case-study .study-text-align-left a {
-      float: left; } }
-  @media screen and (max-width: 500px) {
-    /* line 117, partials/_case-study.scss */
-    .case-study .study-text-align-right {
-      float: left;
-      display: block;
-      margin-right: 0%;
-      width: 100%; }
-      /* line 85, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/neat-1.7.0/app/assets/stylesheets/grid/_span-columns.scss */
-      .case-study .study-text-align-right:last-child {
-        margin-right: 0; } }
-  @media screen and (min-width: 500px) {
-    /* line 117, partials/_case-study.scss */
-    .case-study .study-text-align-right {
-      float: left;
-      display: block;
-      margin-right: 0%;
-      width: 50%;
-      margin-left: 0%; }
-      /* line 85, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/neat-1.7.0/app/assets/stylesheets/grid/_span-columns.scss */
-      .case-study .study-text-align-right:last-child {
-        margin-right: 0; } }
-  @media screen and (min-width: 53.75em) {
-    /* line 117, partials/_case-study.scss */
-    .case-study .study-text-align-right {
-      float: left;
-      display: block;
-      margin-right: 0%;
-      width: 50%;
-      margin-left: 0%; }
-      /* line 85, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/neat-1.7.0/app/assets/stylesheets/grid/_span-columns.scss */
-      .case-study .study-text-align-right:last-child {
-        margin-right: 0; } }
-  @media screen and (min-width: 500px) {
-    /* line 130, partials/_case-study.scss */
-    .case-study .study-text-align-right h5 {
-      text-align: right; } }
-  @media screen and (min-width: 500px) {
-    /* line 135, partials/_case-study.scss */
-    .case-study .study-text-align-right p {
-      text-align: right; } }
-  @media screen and (min-width: 500px) {
-    /* line 140, partials/_case-study.scss */
-    .case-study .study-text-align-right a {
-      float: right; } }
-
-/* line 12, partials/_iphone-mock.scss */
-.iphone5-wrap .iphone5, .iphone5-wrap-align-right .iphone5, .iphone5-wrap-align-left .iphone5 {
-  background: #DDD;
-  border-radius: 1em;
-  display: block;
-  padding: 2.8em 0;
-  width: 10.8em;
-  margin: 0 auto;
-  box-shadow: 0px 3px 3px 0px #aaaaaa; }
-  @media screen and (min-width: 500px) {
-    /* line 12, partials/_iphone-mock.scss */
-    .iphone5-wrap .iphone5, .iphone5-wrap-align-right .iphone5, .iphone5-wrap-align-left .iphone5 {
-      margin: -2em 0 0 0; } }
-/* line 24, partials/_iphone-mock.scss */
-.iphone5-wrap .screen, .iphone5-wrap-align-right .screen, .iphone5-wrap-align-left .screen {
-  height: 17.73438em;
-  width: 10em;
-  background-size: cover;
-  border: 1px solid #DDD;
-  margin: auto; }
-
-@media screen and (max-width: 500px) {
-  /* line 32, partials/_iphone-mock.scss */
-  .iphone5-wrap-align-right {
-    float: left;
-    display: block;
-    margin-right: 0%;
-    width: 100%; }
-    /* line 85, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/neat-1.7.0/app/assets/stylesheets/grid/_span-columns.scss */
-    .iphone5-wrap-align-right:last-child {
-      margin-right: 0; } }
-@media screen and (min-width: 500px) {
-  /* line 32, partials/_iphone-mock.scss */
-  .iphone5-wrap-align-right {
-    float: left;
-    display: block;
-    margin-right: 0%;
-    width: 50%; }
-    /* line 85, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/neat-1.7.0/app/assets/stylesheets/grid/_span-columns.scss */
-    .iphone5-wrap-align-right:last-child {
-      margin-right: 0; } }
-@media screen and (min-width: 53.75em) {
-  /* line 32, partials/_iphone-mock.scss */
-  .iphone5-wrap-align-right {
-    float: left;
-    display: block;
-    margin-right: 0%;
-    width: 50%; }
-    /* line 85, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/neat-1.7.0/app/assets/stylesheets/grid/_span-columns.scss */
-    .iphone5-wrap-align-right:last-child {
-      margin-right: 0; } }
-@media screen and (min-width: 500px) {
-  /* line 43, partials/_iphone-mock.scss */
-  .iphone5-wrap-align-right .iphone5 {
-    float: right; } }
-
-@media screen and (max-width: 500px) {
-  /* line 51, partials/_iphone-mock.scss */
-  .iphone5-wrap-align-left {
-    float: left;
-    display: block;
-    margin-right: 0%;
-    width: 100%; }
-    /* line 85, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/neat-1.7.0/app/assets/stylesheets/grid/_span-columns.scss */
-    .iphone5-wrap-align-left:last-child {
-      margin-right: 0; } }
-@media screen and (min-width: 500px) {
-  /* line 51, partials/_iphone-mock.scss */
-  .iphone5-wrap-align-left {
-    float: left;
-    display: block;
-    margin-right: 0%;
-    width: 50%;
-    margin-left: -100%; }
-    /* line 85, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/neat-1.7.0/app/assets/stylesheets/grid/_span-columns.scss */
-    .iphone5-wrap-align-left:last-child {
-      margin-right: 0; } }
-@media screen and (min-width: 53.75em) {
-  /* line 51, partials/_iphone-mock.scss */
-  .iphone5-wrap-align-left {
-    float: left;
-    display: block;
-    margin-right: 0%;
-    width: 50%;
-    margin-left: -100%; }
-    /* line 85, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/neat-1.7.0/app/assets/stylesheets/grid/_span-columns.scss */
-    .iphone5-wrap-align-left:last-child {
-      margin-right: 0; } }
-@media screen and (min-width: 500px) {
-  /* line 65, partials/_iphone-mock.scss */
-  .iphone5-wrap-align-left .iphone5 {
-    float: left; } }
-
-/* line 4, partials/_work.scss */
+/* line 1, partials/_work-intro.scss */
 .work-intro {
   max-width: 31.25em;
   margin-left: auto;
   margin-right: auto;
-  margin: 1em auto; }
+  margin: 1em auto;
+  padding-left: 0.5em; }
   /* line 15, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_clearfix.scss */
   .work-intro:after {
     content: "";
     display: table;
     clear: both; }
-  /* line 8, partials/_work.scss */
-  .work-intro .wrap {
-    padding: 0 1.5em; }
-    /* line 11, partials/_work.scss */
-    .work-intro .wrap .text-wrap {
-      padding: 0 0.5em;
-      text-align: left;
-      border-left: 1px solid #DDD; }
-      /* line 16, partials/_work.scss */
-      .work-intro .wrap .text-wrap .title {
-        font-family: "HelveticaNeue-Medium", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; }
-      /* line 20, partials/_work.scss */
-      .work-intro .wrap .text-wrap .subtitle {
-        color: #4A4A4A;
-        font-family: "HelveticaNeue-Light", "HelveticaNeue-Medium", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-        font-size: 0.9em; }
+
+/* line 7, partials/_work-intro.scss */
+.work-intro-inner-border-wrap {
+  border-left: 1px solid #DDD;
+  padding: 0 0.5em; }
+
+/* line 12, partials/_work-intro.scss */
+.work-intro-title-text {
+  text-align: left; }
+
+/* line 16, partials/_work-intro.scss */
+.work-intro-subtitle-text {
+  color: #4A4A4A;
+  font-family: "HelveticaNeue-Light", "HelveticaNeue-Medium", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 0.9em;
+  margin: 0; }
+
+/* line 1, partials/_case-study.scss */
+.case-study {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 20em;
+  width: 100%;
+  margin-bottom: 3em;
+  margin-top: 3em;
+  color: #333333; }
+  /* line 15, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_clearfix.scss */
+  .case-study:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+/* line 13, partials/_case-study.scss */
+.case-study.mod-buddybounce {
+  background-image: url("/assets/buddybounce-background.jpg");
+  background-color: #d47f00; }
+
+/* line 18, partials/_case-study.scss */
+.case-study.mod-mesvaccins {
+  background-color: #10294d; }
+
+/* line 25, partials/_case-study.scss */
+.case-study-text-wrap {
+  display: block;
+  margin-bottom: 1em;
+  padding: 1.5em; }
+  @media screen and (max-width: 500px) {
+    /* line 25, partials/_case-study.scss */
+    .case-study-text-wrap {
+      float: left;
+      display: block;
+      margin-right: 0%;
+      width: 100%; }
+      /* line 85, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/neat-1.7.0/app/assets/stylesheets/grid/_span-columns.scss */
+      .case-study-text-wrap:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 500px) {
+    /* line 25, partials/_case-study.scss */
+    .case-study-text-wrap {
+      float: left;
+      display: block;
+      margin-right: 0%;
+      width: 50%; }
+      /* line 85, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/neat-1.7.0/app/assets/stylesheets/grid/_span-columns.scss */
+      .case-study-text-wrap:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 53.75em) {
+    /* line 25, partials/_case-study.scss */
+    .case-study-text-wrap {
+      float: left;
+      display: block;
+      margin-right: 0%;
+      width: 62.5%; }
+      /* line 85, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/neat-1.7.0/app/assets/stylesheets/grid/_span-columns.scss */
+      .case-study-text-wrap:last-child {
+        margin-right: 0; } }
+
+@media screen and (min-width: 500px) {
+  /* line 41, partials/_case-study.scss */
+  .case-study-text-wrap.mod-shift-right-half {
+    float: left;
+    display: block;
+    margin-right: 0%;
+    width: 50%;
+    margin-left: 50%; }
+    /* line 85, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/neat-1.7.0/app/assets/stylesheets/grid/_span-columns.scss */
+    .case-study-text-wrap.mod-shift-right-half:last-child {
+      margin-right: 0; } }
+@media screen and (min-width: 53.75em) {
+  /* line 41, partials/_case-study.scss */
+  .case-study-text-wrap.mod-shift-right-half {
+    float: left;
+    display: block;
+    margin-right: 0%;
+    width: 50%;
+    margin-left: 37.5%; }
+    /* line 85, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/neat-1.7.0/app/assets/stylesheets/grid/_span-columns.scss */
+    .case-study-text-wrap.mod-shift-right-half:last-child {
+      margin-right: 0; } }
+
+/* line 52, partials/_case-study.scss */
+.case-study-title {
+  color: white;
+  margin-bottom: 0;
+  text-align: center; }
+
+@media screen and (min-width: 500px) {
+  /* line 58, partials/_case-study.scss */
+  .case-study-title.mod-align-right {
+    text-align: right; } }
+
+@media screen and (min-width: 500px) {
+  /* line 64, partials/_case-study.scss */
+  .case-study-title.mod-align-left {
+    text-align: left; } }
+
+/* line 70, partials/_case-study.scss */
+.case-study-subtitle {
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  font-size: 0.9em;
+  margin-top: 0.5em;
+  margin-bottom: 1.5em;
+  padding-top: 0.5em;
+  text-align: center; }
+  /* line 15, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_clearfix.scss */
+  .case-study-subtitle:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+@media screen and (min-width: 500px) {
+  /* line 81, partials/_case-study.scss */
+  .case-study-subtitle.mod-align-right {
+    text-align: right;
+    float: right; } }
+
+@media screen and (min-width: 500px) {
+  /* line 88, partials/_case-study.scss */
+  .case-study-subtitle.mod-align-left {
+    text-align: left;
+    float: left; } }
+
+/* line 95, partials/_case-study.scss */
+.case-study-link {
+  -webkit-transition: background-color 0.1s linear;
+  -moz-transition: background-color 0.1s linear;
+  transition: background-color 0.1s linear;
+  -webkit-transition: color 0.1s linear;
+  -moz-transition: color 0.1s linear;
+  transition: color 0.1s linear;
+  border: 2px solid white;
+  border-radius: 100px;
+  color: white;
+  display: block;
+  margin: 0 auto;
+  padding: 0.2em 0.2em 0.3em 0.2em;
+  text-align: center;
+  width: 6em; }
+  /* line 15, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_clearfix.scss */
+  .case-study-link:after {
+    content: "";
+    display: table;
+    clear: both; }
+  /* line 109, partials/_case-study.scss */
+  .case-study-link:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+    color: #333333; }
+
+@media screen and (min-width: 500px) {
+  /* line 115, partials/_case-study.scss */
+  .case-study-link.mod-align-right {
+    float: right;
+    clear: both; } }
+
+@media screen and (min-width: 500px) {
+  /* line 122, partials/_case-study.scss */
+  .case-study-link.mod-align-left {
+    float: left;
+    clear: both; } }
+
+@media screen and (max-width: 500px) {
+  /* line 11, partials/_iphone5-mock.scss */
+  .iphone5-wrap {
+    float: left;
+    display: block;
+    margin-right: 0%;
+    width: 100%; }
+    /* line 85, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/neat-1.7.0/app/assets/stylesheets/grid/_span-columns.scss */
+    .iphone5-wrap:last-child {
+      margin-right: 0; } }
+@media screen and (min-width: 500px) {
+  /* line 11, partials/_iphone5-mock.scss */
+  .iphone5-wrap {
+    float: left;
+    display: block;
+    margin-right: 0%;
+    width: 50%; }
+    /* line 85, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/neat-1.7.0/app/assets/stylesheets/grid/_span-columns.scss */
+    .iphone5-wrap:last-child {
+      margin-right: 0; } }
+@media screen and (min-width: 53.75em) {
+  /* line 11, partials/_iphone5-mock.scss */
+  .iphone5-wrap {
+    float: left;
+    display: block;
+    margin-right: 0%;
+    width: 37.5%; }
+    /* line 85, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/neat-1.7.0/app/assets/stylesheets/grid/_span-columns.scss */
+    .iphone5-wrap:last-child {
+      margin-right: 0; } }
+
+@media screen and (min-width: 500px) {
+  /* line 23, partials/_iphone5-mock.scss */
+  .iphone5-wrap.mod-shift-left-half {
+    float: left;
+    display: block;
+    margin-right: 0%;
+    width: 50%;
+    margin-left: -100%; }
+    /* line 85, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/neat-1.7.0/app/assets/stylesheets/grid/_span-columns.scss */
+    .iphone5-wrap.mod-shift-left-half:last-child {
+      margin-right: 0; } }
+@media screen and (min-width: 53.75em) {
+  /* line 23, partials/_iphone5-mock.scss */
+  .iphone5-wrap.mod-shift-left-half {
+    float: left;
+    display: block;
+    margin-right: 0%;
+    width: 50%;
+    margin-left: -100%; }
+    /* line 85, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/neat-1.7.0/app/assets/stylesheets/grid/_span-columns.scss */
+    .iphone5-wrap.mod-shift-left-half:last-child {
+      margin-right: 0; } }
+
+/* line 34, partials/_iphone5-mock.scss */
+.iphone5 {
+  background: #DDD;
+  border-radius: 1em;
+  box-shadow: 0px 3px 3px 0px #aaaaaa;
+  display: block;
+  margin: 0em auto -2em auto;
+  padding: 2.8em 0;
+  width: 10.8em; }
+  @media screen and (min-width: 500px) {
+    /* line 34, partials/_iphone5-mock.scss */
+    .iphone5 {
+      margin: -2em auto; } }
+
+@media screen and (min-width: 500px) {
+  /* line 47, partials/_iphone5-mock.scss */
+  .iphone5.mod-align-left {
+    float: left;
+    margin-left: 1em; } }
+
+@media screen and (min-width: 500px) {
+  /* line 54, partials/_iphone5-mock.scss */
+  .iphone5.mod-align-right {
+    float: right;
+    margin-right: 1em; } }
+
+/* line 61, partials/_iphone5-mock.scss */
+.screen {
+  height: 17.73438em;
+  width: 10em;
+  background-size: cover;
+  border: 1px solid #DDD;
+  margin: auto; }
