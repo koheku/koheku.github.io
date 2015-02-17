@@ -1,45 +1,71 @@
 nav {
   @include outer-container;
-  padding: 1rem 1rem 0 1rem;
+}
 
-  .logo {
-    @include transition(background-color 0.1s linear);
-    @include transition(color 0.1s linear);
+.nav-logo-wrap {
+  @include media($mobile) {
+    @include span-columns(4);
+  }
+  @include media($medium-screen-up) {
+    @include span-columns(1);
+  }
+  margin: 0.5em 0;
+}
 
-    border: 1px solid $hover-link-color;
-    border-radius: 50%;
-    color: $hover-link-color;
-    display: inline-block;
-    font-size: $font-size-large;
-    font-weight: $font-weight-semi-bold;
-    height: 2.5em;
-    line-height: 2.2em;
-    margin: 0.5rem 0.5rem;
-    text-align: center;
-    text-align: center;
-    width: 2.5em;
-
-    &:hover {
-      background-color: $hover-link-color;
-      color: white;
-    }
+.nav-logo {
+  @include transition(background-color 0.1s linear);
+  @include transition(color 0.1s linear);
+  @include media($medium-screen-up) {
+    float: right;
+    margin-right: 0.5em;
   }
 
-  ul {
-    display: inline-block;
-    margin: 0.5rem 0 0.5rem 0;
-    padding-bottom: 0.5rem;
-    border-bottom: 1px solid $base-border-color;
+  border: 1px solid $hover-link-color;
+  border-radius: 50%;
+  color: $hover-link-color;
+  display: block;
+  font-size: $font-size-large;
+  font-weight: $font-weight-semi-bold;
+  height: 2.5em;
+  line-height: 2.2em;
+  margin: 0 auto;
+  text-align: center;
+  width: 2.5em;
 
-    a.current-nav-tab {
-      color: $hover-link-color;
-    }
-
-    a {
-      padding: 1rem;
-      font-size: $font-size-large;
-      font-weight: $font-weight-semi-bold;
-      text-transform: uppercase;
-    }
+  &:hover {
+    background-color: $hover-link-color;
+    color: white;
   }
+}
+
+.nav-links-wrap {
+  @include media($mobile) {
+    @include span-columns(4);
+  }
+  @include media($medium-screen-up) {
+    float: left;
+    margin-top: 1em;
+    padding-bottom: 4px;
+  }
+  border-bottom: 1px solid $base-border-color;
+  margin: 0.5rem 0 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.nav-link {
+  @include media($mobile) {
+    @include span-columns(1 of 3);
+  }
+  @include media($medium-screen-up) {
+    // @include span-columns(1 of 3);
+    margin: 1em;
+  }
+  font-size: $font-size-large;
+  font-weight: $font-weight-semi-bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.nav-link.mod-active {
+  color: $hover-link-color;
 }
