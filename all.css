@@ -486,20 +486,21 @@ nav {
 
 /* line 13, partials/_case-study.scss */
 .case-study.mod-buddybounce {
-  background-image: url("/assets/buddybounce-background.jpg");
+  background-image: url("/assets/bb/buddybounce-background.jpg");
   background-color: #d47f00; }
 
 /* line 18, partials/_case-study.scss */
 .case-study.mod-mesvaccins {
-  background-color: #10294d; }
+  background-image: url("/assets/mv/mesvaccins-background.jpg");
+  background-color: #113970; }
 
-/* line 25, partials/_case-study.scss */
+/* line 26, partials/_case-study.scss */
 .case-study-text-wrap {
   display: block;
   margin-bottom: 1em;
   padding: 1.5em; }
   @media screen and (max-width: 500px) {
-    /* line 25, partials/_case-study.scss */
+    /* line 26, partials/_case-study.scss */
     .case-study-text-wrap {
       float: left;
       display: block;
@@ -509,7 +510,7 @@ nav {
       .case-study-text-wrap:last-child {
         margin-right: 0; } }
   @media screen and (min-width: 500px) {
-    /* line 25, partials/_case-study.scss */
+    /* line 26, partials/_case-study.scss */
     .case-study-text-wrap {
       float: left;
       display: block;
@@ -519,7 +520,7 @@ nav {
       .case-study-text-wrap:last-child {
         margin-right: 0; } }
   @media screen and (min-width: 53.75em) {
-    /* line 25, partials/_case-study.scss */
+    /* line 26, partials/_case-study.scss */
     .case-study-text-wrap {
       float: left;
       display: block;
@@ -530,7 +531,7 @@ nav {
         margin-right: 0; } }
 
 @media screen and (min-width: 500px) {
-  /* line 41, partials/_case-study.scss */
+  /* line 42, partials/_case-study.scss */
   .case-study-text-wrap.mod-shift-right-half {
     float: left;
     display: block;
@@ -541,7 +542,7 @@ nav {
     .case-study-text-wrap.mod-shift-right-half:last-child {
       margin-right: 0; } }
 @media screen and (min-width: 53.75em) {
-  /* line 41, partials/_case-study.scss */
+  /* line 42, partials/_case-study.scss */
   .case-study-text-wrap.mod-shift-right-half {
     float: left;
     display: block;
@@ -552,29 +553,30 @@ nav {
     .case-study-text-wrap.mod-shift-right-half:last-child {
       margin-right: 0; } }
 
-/* line 52, partials/_case-study.scss */
+/* line 53, partials/_case-study.scss */
 .case-study-title {
   color: white;
   margin-bottom: 0;
   text-align: center; }
 
 @media screen and (min-width: 500px) {
-  /* line 58, partials/_case-study.scss */
+  /* line 59, partials/_case-study.scss */
   .case-study-title.mod-align-right {
     text-align: right; } }
 
 @media screen and (min-width: 500px) {
-  /* line 64, partials/_case-study.scss */
+  /* line 65, partials/_case-study.scss */
   .case-study-title.mod-align-left {
     text-align: left; } }
 
-/* line 70, partials/_case-study.scss */
+/* line 71, partials/_case-study.scss */
 .case-study-subtitle {
   border-top: 1px solid rgba(255, 255, 255, 0.3);
   color: white;
+  display: block;
   font-size: 0.9em;
-  margin-top: 0.5em;
-  margin-bottom: 1.5em;
+  margin: 0.5em auto 1.5em;
+  max-width: 22em;
   padding-top: 0.5em;
   text-align: center; }
   /* line 15, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_clearfix.scss */
@@ -584,18 +586,18 @@ nav {
     clear: both; }
 
 @media screen and (min-width: 500px) {
-  /* line 81, partials/_case-study.scss */
+  /* line 83, partials/_case-study.scss */
   .case-study-subtitle.mod-align-right {
     text-align: right;
     float: right; } }
 
 @media screen and (min-width: 500px) {
-  /* line 88, partials/_case-study.scss */
+  /* line 90, partials/_case-study.scss */
   .case-study-subtitle.mod-align-left {
     text-align: left;
     float: left; } }
 
-/* line 95, partials/_case-study.scss */
+/* line 97, partials/_case-study.scss */
 .case-study-link {
   -webkit-transition: background-color 0.1s linear;
   -moz-transition: background-color 0.1s linear;
@@ -616,19 +618,19 @@ nav {
     content: "";
     display: table;
     clear: both; }
-  /* line 109, partials/_case-study.scss */
+  /* line 111, partials/_case-study.scss */
   .case-study-link:hover {
     background-color: rgba(255, 255, 255, 0.6);
     color: #333333; }
 
 @media screen and (min-width: 500px) {
-  /* line 115, partials/_case-study.scss */
+  /* line 117, partials/_case-study.scss */
   .case-study-link.mod-align-right {
     float: right;
     clear: both; } }
 
 @media screen and (min-width: 500px) {
-  /* line 122, partials/_case-study.scss */
+  /* line 124, partials/_case-study.scss */
   .case-study-link.mod-align-left {
     float: left;
     clear: both; } }
@@ -720,3 +722,11 @@ nav {
   background-size: cover;
   border: 1px solid #DDD;
   margin: auto; }
+
+/* line 68, partials/_iphone5-mock.scss */
+.screen.mod-mesvaccins {
+  background-image: url(/assets/mv/mesvaccins-screenshot1.jpg); }
+
+/* line 72, partials/_iphone5-mock.scss */
+.screen.mod-buddybounce {
+  background-image: url(/assets/bb/buddybounce-screenshot1.jpg); }
