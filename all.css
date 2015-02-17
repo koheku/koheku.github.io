@@ -32,7 +32,7 @@ body {
   -webkit-font-smoothing: antialiased;
   background-color: white;
   color: #333333;
-  font-family: "HelveticaNeue-Medium", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-size: 1em;
   line-height: 1.5; }
 
@@ -44,7 +44,7 @@ h4,
 h5,
 h6 {
   font-weight: 200;
-  font-family: "HelveticaNeue-Medium", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   line-height: 1.25;
   margin: 0;
   text-rendering: optimizeLegibility; }
@@ -133,7 +133,7 @@ input,
 label,
 select {
   display: block;
-  font-family: "HelveticaNeue-Medium", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-size: 1em; }
 
 /* line 16, base/_forms.scss */
@@ -161,7 +161,7 @@ select[multiple=multiple] {
   border-radius: 3px;
   border: 1px solid #DDD;
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
-  font-family: "HelveticaNeue-Medium", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-size: 1em;
   margin-bottom: 0.75em;
   padding: 0.5em 0.5em;
@@ -341,16 +341,15 @@ html {
       padding: 0 1.5em; }
       /* line 29, partials/_layout.scss */
       .profile-wrap .profile-intro .wrap .text-wrap {
+        font-weight: 600;
+        border-left: 1px solid #DDD;
         padding: 0 0.5em;
-        text-align: left;
-        font-family: "HelveticaNeue-Medium", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-        border-left: 1px solid #DDD; }
+        text-align: left; }
         /* line 34, partials/_layout.scss */
         .profile-wrap .profile-intro .wrap .text-wrap .subtitle {
           color: #4A4A4A;
-          font-family: "HelveticaNeue-Light", "HelveticaNeue-Medium", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-          font-size: 0.9em; }
-  /* line 43, partials/_layout.scss */
+          font-size: 0.875em; }
+  /* line 42, partials/_layout.scss */
   .profile-wrap .iphone-side-images {
     float: left;
     display: block;
@@ -363,7 +362,7 @@ html {
     .profile-wrap .iphone-side-images:last-child {
       margin-right: 0; }
     @media screen and (max-width: 500px) {
-      /* line 43, partials/_layout.scss */
+      /* line 42, partials/_layout.scss */
       .profile-wrap .iphone-side-images {
         float: left;
         display: block;
@@ -372,22 +371,22 @@ html {
         /* line 85, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/neat-1.7.0/app/assets/stylesheets/grid/_span-columns.scss */
         .profile-wrap .iphone-side-images:last-child {
           margin-right: 0; } }
-    /* line 53, partials/_layout.scss */
+    /* line 52, partials/_layout.scss */
     .profile-wrap .iphone-side-images img {
       float: left;
       height: 20em; }
 
-/* line 60, partials/_layout.scss */
+/* line 59, partials/_layout.scss */
 body {
   margin: 0; }
   @media screen and (min-width: 500px) {
-    /* line 60, partials/_layout.scss */
+    /* line 59, partials/_layout.scss */
     body {
-      font-size: 110%; } }
+      font-size: 18px; } }
   @media screen and (min-width: 53.75em) {
-    /* line 60, partials/_layout.scss */
+    /* line 59, partials/_layout.scss */
     body {
-      font-size: 120%; } }
+      font-size: 20px; } }
 
 /* line 1, partials/_nav.scss */
 nav {
@@ -408,33 +407,36 @@ nav {
     -webkit-transition: color 0.1s linear;
     -moz-transition: color 0.1s linear;
     transition: color 0.1s linear;
-    display: inline-block;
-    margin: 0.5rem 0.5rem;
     border: 1px solid #6a6a6a;
     border-radius: 50%;
-    text-align: center;
-    line-height: 2.2em;
     color: #6a6a6a;
-    text-align: center;
+    display: inline-block;
+    font-size: 1.125em;
+    font-weight: 600;
     height: 2.5em;
+    line-height: 2.2em;
+    margin: 0.5rem 0.5rem;
+    text-align: center;
+    text-align: center;
     width: 2.5em; }
-    /* line 20, partials/_nav.scss */
+    /* line 22, partials/_nav.scss */
     nav .logo:hover {
       background-color: #6a6a6a;
       color: white; }
-  /* line 26, partials/_nav.scss */
+  /* line 28, partials/_nav.scss */
   nav ul {
     display: inline-block;
     margin: 0.5rem 0 0.5rem 0;
     padding-bottom: 0.5rem;
     border-bottom: 1px solid #DDD; }
-    /* line 32, partials/_nav.scss */
+    /* line 34, partials/_nav.scss */
     nav ul a.current-nav-tab {
       color: #6a6a6a; }
-    /* line 36, partials/_nav.scss */
+    /* line 38, partials/_nav.scss */
     nav ul a {
       padding: 1rem;
-      font-size: 1em;
+      font-size: 1.125em;
+      font-weight: 600;
       text-transform: uppercase; }
 
 /* line 1, partials/_work-intro.scss */
@@ -443,7 +445,7 @@ nav {
   margin-left: auto;
   margin-right: auto;
   margin: 1em auto;
-  padding-left: 0.5em; }
+  padding-left: 0.8em; }
   /* line 15, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_clearfix.scss */
   .work-intro:after {
     content: "";
@@ -453,17 +455,19 @@ nav {
 /* line 7, partials/_work-intro.scss */
 .work-intro-inner-border-wrap {
   border-left: 1px solid #DDD;
-  padding: 0 0.5em; }
+  padding: 0 0.8em; }
 
 /* line 12, partials/_work-intro.scss */
 .work-intro-title-text {
-  text-align: left; }
+  font-size: 1.125em;
+  font-weight: 600;
+  text-align: left;
+  margin: 0 0 0.25em; }
 
-/* line 16, partials/_work-intro.scss */
+/* line 19, partials/_work-intro.scss */
 .work-intro-subtitle-text {
   color: #4A4A4A;
-  font-family: "HelveticaNeue-Light", "HelveticaNeue-Medium", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-  font-size: 0.9em;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   margin: 0; }
 
 /* line 1, partials/_case-study.scss */
@@ -498,6 +502,7 @@ nav {
 .case-study-text-wrap {
   display: block;
   margin-bottom: 1em;
+  margin-top: 1em;
   padding: 1.5em; }
   @media screen and (max-width: 500px) {
     /* line 26, partials/_case-study.scss */
@@ -531,7 +536,7 @@ nav {
         margin-right: 0; } }
 
 @media screen and (min-width: 500px) {
-  /* line 42, partials/_case-study.scss */
+  /* line 43, partials/_case-study.scss */
   .case-study-text-wrap.mod-shift-right-half {
     float: left;
     display: block;
@@ -542,7 +547,7 @@ nav {
     .case-study-text-wrap.mod-shift-right-half:last-child {
       margin-right: 0; } }
 @media screen and (min-width: 53.75em) {
-  /* line 42, partials/_case-study.scss */
+  /* line 43, partials/_case-study.scss */
   .case-study-text-wrap.mod-shift-right-half {
     float: left;
     display: block;
@@ -553,28 +558,30 @@ nav {
     .case-study-text-wrap.mod-shift-right-half:last-child {
       margin-right: 0; } }
 
-/* line 53, partials/_case-study.scss */
+/* line 54, partials/_case-study.scss */
 .case-study-title {
   color: white;
+  font-size: 1.25em;
+  font-weight: 600;
   margin-bottom: 0;
   text-align: center; }
 
 @media screen and (min-width: 500px) {
-  /* line 59, partials/_case-study.scss */
+  /* line 62, partials/_case-study.scss */
   .case-study-title.mod-align-right {
     text-align: right; } }
 
 @media screen and (min-width: 500px) {
-  /* line 65, partials/_case-study.scss */
+  /* line 68, partials/_case-study.scss */
   .case-study-title.mod-align-left {
     text-align: left; } }
 
-/* line 71, partials/_case-study.scss */
+/* line 74, partials/_case-study.scss */
 .case-study-subtitle {
   border-top: 1px solid rgba(255, 255, 255, 0.3);
   color: white;
   display: block;
-  font-size: 0.9em;
+  font-size: 1.125em;
   margin: 0.5em auto 1.5em;
   max-width: 22em;
   padding-top: 0.5em;
@@ -586,18 +593,18 @@ nav {
     clear: both; }
 
 @media screen and (min-width: 500px) {
-  /* line 83, partials/_case-study.scss */
+  /* line 86, partials/_case-study.scss */
   .case-study-subtitle.mod-align-right {
     text-align: right;
     float: right; } }
 
 @media screen and (min-width: 500px) {
-  /* line 90, partials/_case-study.scss */
+  /* line 93, partials/_case-study.scss */
   .case-study-subtitle.mod-align-left {
     text-align: left;
     float: left; } }
 
-/* line 97, partials/_case-study.scss */
+/* line 100, partials/_case-study.scss */
 .case-study-link {
   -webkit-transition: background-color 0.1s linear;
   -moz-transition: background-color 0.1s linear;
@@ -609,6 +616,8 @@ nav {
   border-radius: 100px;
   color: white;
   display: block;
+  font-size: 1.125em;
+  font-weight: 600;
   margin: 0 auto;
   padding: 0.2em 0.2em 0.3em 0.2em;
   text-align: center;
@@ -618,19 +627,19 @@ nav {
     content: "";
     display: table;
     clear: both; }
-  /* line 111, partials/_case-study.scss */
+  /* line 116, partials/_case-study.scss */
   .case-study-link:hover {
     background-color: rgba(255, 255, 255, 0.6);
     color: #333333; }
 
 @media screen and (min-width: 500px) {
-  /* line 117, partials/_case-study.scss */
+  /* line 122, partials/_case-study.scss */
   .case-study-link.mod-align-right {
     float: right;
     clear: both; } }
 
 @media screen and (min-width: 500px) {
-  /* line 124, partials/_case-study.scss */
+  /* line 129, partials/_case-study.scss */
   .case-study-link.mod-align-left {
     float: left;
     clear: both; } }
