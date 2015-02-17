@@ -22,6 +22,15 @@
   </head>
 
   <body>
+      <nav>
+    <a class="logo" href="/">pH</a>
+    <ul>
+      <a href="/">Profile</a>
+      <a href="/work">Work</a>
+      <a class="current-nav-tab" href="/blog">Blog</a>
+    </ul>
+  </nav>
+  <div class="blog-content-wrap">
     <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Blog Name</title>
@@ -35,18 +44,20 @@
   </author>
   <entry>
     <title>Blog with middleman and Github Pages</title>
-    <link rel="alternate" href="http://blog.url.com/blog/2014/12/15/creating-my-blog.html"/>
-    <id>http://blog.url.com/blog/2014/12/15/creating-my-blog.html</id>
+    <link rel="alternate" href="http://blog.url.com/blog/2014/12/15/creating-my-blog/"/>
+    <id>http://blog.url.com/blog/2014/12/15/creating-my-blog/</id>
     <published>2014-12-15T01:00:00+01:00</published>
-    <updated>2015-02-05T12:24:08+01:00</updated>
+    <updated>2015-02-17T19:22:10+01:00</updated>
     <author>
       <name>Article Author</name>
     </author>
-    <content type="html">&lt;p&gt;Welcome to my blog ! ヽ༼ຈل͜ຈ༽ﾉ
+    <content type="html">&lt;p&gt;Welcome to my blog !
 It is powered by middleman and github pages.&lt;/p&gt;
 </content>
   </entry>
 </feed>
+
+  </div>
 
   </body>
 

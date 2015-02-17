@@ -739,3 +739,14 @@ nav {
 /* line 72, partials/_iphone5-mock.scss */
 .screen.mod-buddybounce {
   background-image: url(/assets/bb/buddybounce-screenshot1.jpg); }
+
+/* line 1, partials/_blog.scss */
+.blog-content-wrap {
+  max-width: 31.25em;
+  margin-left: auto;
+  margin-right: auto; }
+  /* line 15, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_clearfix.scss */
+  .blog-content-wrap:after {
+    content: "";
+    display: table;
+    clear: both; }
