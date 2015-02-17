@@ -29,9 +29,6 @@ activate :blog do |blog|
   # blog.page_link = "page/{num}"
 end
 
-# page "/blog/*", :layout => "blog/layout"
-page "/feed.xml", layout: false
-
 ###
 # Compass
 ###
@@ -102,6 +99,15 @@ configure :build do
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
 end
+
+# layouts
+page "/work/*", :layout => "work_layout"
+page "/blog/*", :layout => "blog_layout"
+page "/", :layout => "profile_layout"
+page "/feed.xml", layout: false
+
+# pretty urls
+activate :directory_indexes
 
 # github deploy
 activate :deploy do |deploy|

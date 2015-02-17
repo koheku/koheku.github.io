@@ -4,5 +4,5 @@ date: 2014-12-15
 tags: middleman, github
 ---
 
-Welcome to my blog ! ヽ༼ຈل͜ຈ༽ﾉ
+Welcome to my blog !
 It is powered by middleman and github pages.

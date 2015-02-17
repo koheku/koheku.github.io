@@ -1,0 +1,13 @@
+<% wrap_layout :layout do %>
+  <nav>
+    <%= link_to "pH", "/", { :class=>"logo" } %>
+    <ul>
+      <%= link_to "Profile", "/" %>
+      <%= link_to "Work", "/work" %>
+      <%= link_to "Blog", "/blog", { :class=>"current-nav-tab"} %>
+    </ul>
+  </nav>
+  <div class="blog-content-wrap">
+    <%= yield %>
+  </div>
+<% end %>
