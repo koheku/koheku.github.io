@@ -6,15 +6,17 @@ nav {
     @include transition(background-color 0.1s linear);
     @include transition(color 0.1s linear);
 
-    display: inline-block;
-    margin: 0.5rem 0.5rem;
     border: 1px solid $hover-link-color;
     border-radius: 50%;
-    text-align: center;
-    line-height: 2.2em;
     color: $hover-link-color;
-    text-align: center;
+    display: inline-block;
+    font-size: $font-size-large;
+    font-weight: $font-weight-semi-bold;
     height: 2.5em;
+    line-height: 2.2em;
+    margin: 0.5rem 0.5rem;
+    text-align: center;
+    text-align: center;
     width: 2.5em;
 
     &:hover {
@@ -35,7 +37,8 @@ nav {
 
     a {
       padding: 1rem;
-      font-size: 1em;
+      font-size: $font-size-large;
+      font-weight: $font-weight-semi-bold;
       text-transform: uppercase;
     }
   }

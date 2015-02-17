@@ -27,14 +27,13 @@
     .wrap {
       padding: 0 1.5em;
       .text-wrap {
+        font-weight: $font-weight-semi-bold;
+        border-left: 1px solid $base-accent-color;
         padding: 0 0.5em;
         text-align: left;
-        font-family: $sans-serif;
-        border-left: 1px solid $base-accent-color;
         .subtitle {
           color: $dark-medium-gray;
-          font-family: $sans-serif-light;
-          font-size:0.9em;
+          font-size: $font-size-small;
         }
       }
     }
@@ -59,10 +58,10 @@
 
 body {
   @include media($medium-screen-up) {
-    font-size:110%;
+    font-size:18px;
   }
   @include media($large-screen-up) {
-    font-size:120%;
+    font-size:20px;
   }
   margin: 0;
 }

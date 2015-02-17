@@ -1,21 +1,22 @@
 .work-intro {
   @include outer-container;
   margin: 1em auto;
-  padding-left: 0.5em;
+  padding-left: 0.8em;
 }
 
 .work-intro-inner-border-wrap {
   border-left: 1px solid $base-accent-color;
-  padding: 0 0.5em;
+  padding: 0 0.8em;
 }
 
 .work-intro-title-text {
+  font-size: $font-size-large;
+  font-weight: 600;
   text-align: left;
 }
 
 .work-intro-subtitle-text {
   color: $dark-medium-gray;
-  font-family: $sans-serif-light;
-  font-size:0.9em;
+  font-family: $sans-serif;
   margin:0;
 }
