@@ -1,18 +1,13 @@
-<div class=profile-wrap>
-  <div class=profile-pic>
-    <img src="https://pbs.twimg.com/profile_images/445828601582075904/jwg-lMwI.jpeg" alt="Profile picture">
+<div class="profile-wrap">
+  <div class="profile-pic-wrap">
+    <img class="profile-pic" src="https://pbs.twimg.com/profile_images/445828601582075904/jwg-lMwI.jpeg" alt="Profile picture">
   </div>
-  <div class=profile-intro>
-    <div class=wrap>
-      <div class=text-wrap>
-        <p>Hello, I'm Paul-Henri.
-          <br>An iOS developer.</p>
-        <p class=subtitle>Currently available for contract work
-          <br>phkoeck@gmail.com</p>
-      </div>
-    </div>
+  <div class="profile-text-wrap">
+    <p class="profile-text-title">Hello ! I'm Paul-Henri,<br>an iOS developer.</p>
+    <%= link_to "View my work", "/work", { :class=>"profile-text-link" } %>
+    <p class="profile-text-subtitle">Currently available for contract work<br>phkoeck [at] gmail.com</p>
   </div>
-  <div class=iphone-side-images>
-    <img src="../assets/iphone-side-images.png" alt="iPhone side view">
-  </div>
+  <!-- <div class=profile&#45;iphone&#45;image&#45;wrap> -->
+  <!--   <img src="../assets/iphone&#45;side&#45;images.png" alt="iPhone side view"> -->
+  <!-- </div> -->
 </div>

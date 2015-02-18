@@ -1,0 +1,75 @@
+.profile-wrap {
+  @include outer-container;
+  padding-top: 1.5em;
+}
+
+.profile-pic-wrap {
+  @include media($mobile) {
+    @include span-columns(4);
+  }
+  @include media($medium-screen-up) {
+    @include span-columns(4);
+  }
+  margin-bottom: 18px;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  display:block;
+  margin: 0 auto;
+  max-height: 88px;
+}
+
+.profile-text-wrap {
+  @include media($mobile) {
+    @include span-columns(4);
+  }
+  @include media($medium-screen-up) {
+    @include span-columns(4);
+  }
+}
+
+.profile-text-title {
+  font-size: $font-size-large;
+  font-weight: $font-weight-semi-bold;
+  text-align: center;
+}
+
+.profile-text-link {
+  border: 2px solid $dark-pink;
+  border-radius: 2em;
+  color: $dark-pink;
+  display: block;
+  font-size: $font-size-large;
+  font-weight: $font-weight-semi-bold;
+  margin: 1em auto;
+  padding: 0.4em 0.1em;
+  text-align: center;
+  width: 10em;
+
+  &:hover {
+    background-color: transparentize($dark-pink, 0.4);
+    color: white;
+  }
+}
+
+.profile-text-subtitle {
+  color: $dark-medium-gray;
+  margin-top: 1em;
+  text-align: center;
+}
+
+// .profile-iphone-image-wrap {
+//   @include media($mobile) {
+//     display: none;
+//   }
+//
+//   margin-top: -2em;
+//   margin-bottom: 2em;
+//   padding-right: 1em;
+//
+//   img {
+//     float: left;
+//     height: 20em;
+//   }
+// }
