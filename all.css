@@ -281,6 +281,129 @@ html {
   box-sizing: inherit; }
 
 /* line 1, partials/_layout.scss */
+body {
+  margin: 0; }
+  @media screen and (min-width: 500px) {
+    /* line 1, partials/_layout.scss */
+    body {
+      font-size: 18px; } }
+  @media screen and (min-width: 53.75em) {
+    /* line 1, partials/_layout.scss */
+    body {
+      font-size: 20px; } }
+
+/* line 1, partials/_nav.scss */
+nav {
+  max-width: 31.25em;
+  margin-left: auto;
+  margin-right: auto; }
+  /* line 15, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_clearfix.scss */
+  nav:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+/* line 5, partials/_nav.scss */
+.nav-logo-wrap {
+  margin: 0.5em 0; }
+  @media screen and (max-width: 500px) {
+    /* line 5, partials/_nav.scss */
+    .nav-logo-wrap {
+      float: left;
+      display: block;
+      margin-right: 0%;
+      width: 100%; }
+      /* line 85, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/neat-1.7.0/app/assets/stylesheets/grid/_span-columns.scss */
+      .nav-logo-wrap:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 500px) {
+    /* line 5, partials/_nav.scss */
+    .nav-logo-wrap {
+      float: left;
+      display: block;
+      margin-right: 0%;
+      width: 25%; }
+      /* line 85, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/neat-1.7.0/app/assets/stylesheets/grid/_span-columns.scss */
+      .nav-logo-wrap:last-child {
+        margin-right: 0; } }
+
+/* line 15, partials/_nav.scss */
+.nav-logo {
+  -webkit-transition: background-color 0.1s linear;
+  -moz-transition: background-color 0.1s linear;
+  transition: background-color 0.1s linear;
+  -webkit-transition: color 0.1s linear;
+  -moz-transition: color 0.1s linear;
+  transition: color 0.1s linear;
+  border: 1px solid #6a6a6a;
+  border-radius: 50%;
+  color: #6a6a6a;
+  display: block;
+  font-size: 1.125em;
+  font-weight: 600;
+  height: 2.5em;
+  line-height: 2.2em;
+  margin: 0 auto;
+  text-align: center;
+  width: 2.5em; }
+  @media screen and (min-width: 500px) {
+    /* line 15, partials/_nav.scss */
+    .nav-logo {
+      float: right;
+      margin-right: 0.5em; } }
+  /* line 35, partials/_nav.scss */
+  .nav-logo:hover {
+    background-color: #6a6a6a;
+    color: white; }
+
+/* line 41, partials/_nav.scss */
+.nav-links-wrap {
+  border-bottom: 1px solid #DDD;
+  margin: 0.5rem 0 0.5rem;
+  padding-bottom: 0.5rem; }
+  @media screen and (max-width: 500px) {
+    /* line 41, partials/_nav.scss */
+    .nav-links-wrap {
+      float: left;
+      display: block;
+      margin-right: 0%;
+      width: 100%; }
+      /* line 85, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/neat-1.7.0/app/assets/stylesheets/grid/_span-columns.scss */
+      .nav-links-wrap:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 500px) {
+    /* line 41, partials/_nav.scss */
+    .nav-links-wrap {
+      float: left;
+      margin-top: 1em;
+      padding-bottom: 8px; } }
+
+/* line 55, partials/_nav.scss */
+.nav-link {
+  font-size: 1.125em;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase; }
+  @media screen and (max-width: 500px) {
+    /* line 55, partials/_nav.scss */
+    .nav-link {
+      float: left;
+      display: block;
+      margin-right: 0%;
+      width: 33.33333%; }
+      /* line 85, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/neat-1.7.0/app/assets/stylesheets/grid/_span-columns.scss */
+      .nav-link:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 500px) {
+    /* line 55, partials/_nav.scss */
+    .nav-link {
+      margin: 1em; } }
+
+/* line 68, partials/_nav.scss */
+.nav-link.mod-active {
+  color: #6a6a6a; }
+
+/* line 1, partials/_profile.scss */
 .profile-wrap {
   max-width: 31.25em;
   margin-left: auto;
@@ -291,153 +414,87 @@ html {
     content: "";
     display: table;
     clear: both; }
-  /* line 6, partials/_layout.scss */
-  .profile-wrap .profile-pic {
-    float: left;
-    display: block;
-    margin-right: 0%;
-    width: 16.66667%; }
-    /* line 85, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/neat-1.7.0/app/assets/stylesheets/grid/_span-columns.scss */
-    .profile-wrap .profile-pic:last-child {
-      margin-right: 0; }
-    @media screen and (max-width: 500px) {
-      /* line 6, partials/_layout.scss */
-      .profile-wrap .profile-pic {
-        float: left;
-        display: block;
-        margin-right: 0%;
-        width: 100%; }
-        /* line 85, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/neat-1.7.0/app/assets/stylesheets/grid/_span-columns.scss */
-        .profile-wrap .profile-pic:last-child {
-          margin-right: 0; } }
-    /* line 12, partials/_layout.scss */
-    .profile-wrap .profile-pic img {
-      display: block;
-      border-radius: 50%;
-      margin: 0 auto;
-      max-height: 5em; }
-  /* line 20, partials/_layout.scss */
-  .profile-wrap .profile-intro {
-    float: left;
-    display: block;
-    margin-right: 0%;
-    width: 66.66667%; }
-    /* line 85, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/neat-1.7.0/app/assets/stylesheets/grid/_span-columns.scss */
-    .profile-wrap .profile-intro:last-child {
-      margin-right: 0; }
-    @media screen and (max-width: 500px) {
-      /* line 20, partials/_layout.scss */
-      .profile-wrap .profile-intro {
-        float: left;
-        display: block;
-        margin-right: 0%;
-        width: 75%;
-        padding: 2em 0; }
-        /* line 85, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/neat-1.7.0/app/assets/stylesheets/grid/_span-columns.scss */
-        .profile-wrap .profile-intro:last-child {
-          margin-right: 0; } }
-    /* line 27, partials/_layout.scss */
-    .profile-wrap .profile-intro .wrap {
-      padding: 0 1.5em; }
-      /* line 29, partials/_layout.scss */
-      .profile-wrap .profile-intro .wrap .text-wrap {
-        font-weight: 600;
-        border-left: 1px solid #DDD;
-        padding: 0 0.5em;
-        text-align: left; }
-        /* line 34, partials/_layout.scss */
-        .profile-wrap .profile-intro .wrap .text-wrap .subtitle {
-          color: #4A4A4A;
-          font-size: 0.875em; }
-  /* line 42, partials/_layout.scss */
-  .profile-wrap .iphone-side-images {
-    float: left;
-    display: block;
-    margin-right: 0%;
-    width: 16.66667%;
-    margin-top: -2em;
-    margin-bottom: 2em;
-    padding-right: 1em; }
-    /* line 85, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/neat-1.7.0/app/assets/stylesheets/grid/_span-columns.scss */
-    .profile-wrap .iphone-side-images:last-child {
-      margin-right: 0; }
-    @media screen and (max-width: 500px) {
-      /* line 42, partials/_layout.scss */
-      .profile-wrap .iphone-side-images {
-        float: left;
-        display: block;
-        margin-right: 0%;
-        width: 25%; }
-        /* line 85, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/neat-1.7.0/app/assets/stylesheets/grid/_span-columns.scss */
-        .profile-wrap .iphone-side-images:last-child {
-          margin-right: 0; } }
-    /* line 52, partials/_layout.scss */
-    .profile-wrap .iphone-side-images img {
+
+/* line 6, partials/_profile.scss */
+.profile-pic-wrap {
+  margin-bottom: 18px; }
+  @media screen and (max-width: 500px) {
+    /* line 6, partials/_profile.scss */
+    .profile-pic-wrap {
       float: left;
-      height: 20em; }
-
-/* line 59, partials/_layout.scss */
-body {
-  margin: 0; }
+      display: block;
+      margin-right: 0%;
+      width: 100%; }
+      /* line 85, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/neat-1.7.0/app/assets/stylesheets/grid/_span-columns.scss */
+      .profile-pic-wrap:last-child {
+        margin-right: 0; } }
   @media screen and (min-width: 500px) {
-    /* line 59, partials/_layout.scss */
-    body {
-      font-size: 18px; } }
-  @media screen and (min-width: 53.75em) {
-    /* line 59, partials/_layout.scss */
-    body {
-      font-size: 20px; } }
+    /* line 6, partials/_profile.scss */
+    .profile-pic-wrap {
+      float: left;
+      display: block;
+      margin-right: 0%;
+      width: 100%; }
+      /* line 85, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/neat-1.7.0/app/assets/stylesheets/grid/_span-columns.scss */
+      .profile-pic-wrap:last-child {
+        margin-right: 0; } }
 
-/* line 1, partials/_nav.scss */
-nav {
-  max-width: 31.25em;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 1rem 1rem 0 1rem; }
-  /* line 15, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_clearfix.scss */
-  nav:after {
-    content: "";
-    display: table;
-    clear: both; }
-  /* line 5, partials/_nav.scss */
-  nav .logo {
-    -webkit-transition: background-color 0.1s linear;
-    -moz-transition: background-color 0.1s linear;
-    transition: background-color 0.1s linear;
-    -webkit-transition: color 0.1s linear;
-    -moz-transition: color 0.1s linear;
-    transition: color 0.1s linear;
-    border: 1px solid #6a6a6a;
-    border-radius: 50%;
-    color: #6a6a6a;
-    display: inline-block;
-    font-size: 1.125em;
-    font-weight: 600;
-    height: 2.5em;
-    line-height: 2.2em;
-    margin: 0.5rem 0.5rem;
-    text-align: center;
-    text-align: center;
-    width: 2.5em; }
-    /* line 22, partials/_nav.scss */
-    nav .logo:hover {
-      background-color: #6a6a6a;
-      color: white; }
-  /* line 28, partials/_nav.scss */
-  nav ul {
-    display: inline-block;
-    margin: 0.5rem 0 0.5rem 0;
-    padding-bottom: 0.5rem;
-    border-bottom: 1px solid #DDD; }
-    /* line 34, partials/_nav.scss */
-    nav ul a.current-nav-tab {
-      color: #6a6a6a; }
-    /* line 38, partials/_nav.scss */
-    nav ul a {
-      padding: 1rem;
-      font-size: 1.125em;
-      font-weight: 600;
-      text-transform: uppercase; }
+/* line 16, partials/_profile.scss */
+.profile-pic {
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  max-height: 88px; }
+
+@media screen and (max-width: 500px) {
+  /* line 23, partials/_profile.scss */
+  .profile-text-wrap {
+    float: left;
+    display: block;
+    margin-right: 0%;
+    width: 100%; }
+    /* line 85, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/neat-1.7.0/app/assets/stylesheets/grid/_span-columns.scss */
+    .profile-text-wrap:last-child {
+      margin-right: 0; } }
+@media screen and (min-width: 500px) {
+  /* line 23, partials/_profile.scss */
+  .profile-text-wrap {
+    float: left;
+    display: block;
+    margin-right: 0%;
+    width: 100%; }
+    /* line 85, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/neat-1.7.0/app/assets/stylesheets/grid/_span-columns.scss */
+    .profile-text-wrap:last-child {
+      margin-right: 0; } }
+
+/* line 32, partials/_profile.scss */
+.profile-text-title {
+  font-size: 1.125em;
+  font-weight: 600;
+  text-align: center; }
+
+/* line 38, partials/_profile.scss */
+.profile-text-link {
+  border: 2px solid #955597;
+  border-radius: 2em;
+  color: #955597;
+  display: block;
+  font-size: 1.125em;
+  font-weight: 600;
+  margin: 1em auto;
+  padding: 0.4em 0.1em;
+  text-align: center;
+  width: 10em; }
+  /* line 50, partials/_profile.scss */
+  .profile-text-link:hover {
+    background-color: rgba(149, 85, 151, 0.6);
+    color: white; }
+
+/* line 56, partials/_profile.scss */
+.profile-text-subtitle {
+  color: #4A4A4A;
+  margin-top: 1em;
+  text-align: center; }
 
 /* line 1, partials/_work-intro.scss */
 .work-intro {
