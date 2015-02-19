@@ -1,0 +1,150 @@
+// $app-icon-width: 50px;
+// $app-icon-height: 50px;
+$app-icon-width: 3.125em;
+$app-icon-height: 3.125em;
+
+
+.cs-app-intro {
+  @include outer-container;
+  @include media($mobile) {
+    @include span-columns(4);
+  }
+  padding: 1em 0.5em 0;
+}
+
+.cs-app-intro-icon-wrap {
+  float: left;
+  padding-top: 0.15em;
+}
+
+.cs-app-intro-icon {
+  @include size($app-icon-width $app-icon-height);
+}
+
+.cs-app-intro-text-wrap {
+  display: inline-block;
+  padding-left: 0.75em;
+}
+
+.cs-app-intro-text-title {
+  font-size: $font-size-large;
+  font-weight: $font-weight-semi-bold;
+  margin-bottom: 0px;
+}
+
+.cs-app-intro-text-subtitle {
+
+}
+
+.cs-app-desc-wrap {
+  @include outer-container;
+  @include media($mobile) {
+    @include span-columns(4);
+  }
+  padding: 0 0.75em;
+  margin-top: 1em;
+}
+
+.cs-app-desc-border-wrap {
+  border-left: 1px solid $medium-gray;
+  padding-left: 0.75em;
+}
+
+.cs-app-desc-title {
+  font-weight: $font-weight-semi-bold;
+  margin-bottom: 5px;
+}
+
+.cs-app-desc-subtitle {
+  font-family: $serif;
+  font-size: $font-size-small;
+}
+
+.cs-app-text-wrap {
+  @include outer-container;
+  @include media($mobile) {
+    @include span-columns(4);
+  }
+  padding: 0 1em;
+  margin-top: 1em;
+
+  p {
+    font-family: $serif;
+    font-size: $font-size-small;
+  }
+}
+
+.cs-app-text-title {
+  font-family: $sans-serif;
+  font-weight: $font-weight-semi-bold;
+  margin-bottom: 5px;
+}
+
+.mod-mesvaccins-link {
+  color: lighten($mv-blue, 10%);
+
+  &:hover {
+    color: $dark-mv-blue;
+  }
+
+  &:active, &:focus {
+    color: $dark-mv-blue;
+  }
+}
+
+.cs-techdetails-wrap {
+  @include outer-container(100%);
+  @include media($mobile) {
+    @include span-columns(4);
+  }
+  @include media($medium-screen-up) {
+    @include span-columns(4);
+    margin-top: 1em;
+    padding: 1em;
+  }
+  background-color: $light-mv-blue;
+  margin-top: 0.5em;
+  padding-top: 1em;
+}
+
+.cs-techdetails-text-wrap {
+  margin: 0 auto;
+  max-width: em(500);
+  padding: 0 1em;
+}
+
+.cs-techdetails-title {
+  color: white;
+  font-size: $font-size-large;
+  font-weight: $font-weight-semi-bold;
+  margin-bottom: 0.75em;
+}
+
+.cs-techdetails-wrap  p {
+  color: white;
+  font-family: $serif;
+  font-size: $font-size-small;
+}
+
+.mod-mesvaccins-techdetails-link {
+  color: $mv-yellow;
+
+  &:hover {
+    color: darken($mv-yellow, 20%);
+  }
+
+  &:active, &:focus {
+    color: darken($mv-yellow, 20%);
+  }
+}
+
+.cs-techdetails-tags {
+  li {
+    color: white;
+    display: inline-block;
+    border: 1px solid white;
+    border-radius: 100px;
+    padding: 0.2em 0.5em 0.3em;
+    margin: 0.3em 0.15em;
+  }
+}

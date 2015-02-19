@@ -1,6 +1,6 @@
 // Typography
 $sans-serif: 'Source Sans Pro', $helvetica;
-$serif: $georgia;
+$serif: 'Merriweather', $georgia;
 $base-font-family: $sans-serif;
 $header-font-family: $base-font-family;
 $font-weight-semi-bold: 600;
@@ -38,8 +38,10 @@ $dark-pink: #955597;
 $light-red: #FBE3E4;
 $light-yellow: #FFF6BF;
 $light-green: #E6EFC2;
+$light-mv-blue: #386098;
 $mv-blue: #1D4B8C;
 $dark-mv-blue: #113970;
+$mv-yellow: #FFC970;
 $bb-yellow: #FFB03B;
 $light-bb-yellow: #FFD068;
 
