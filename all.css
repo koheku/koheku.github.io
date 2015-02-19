@@ -784,7 +784,7 @@ nav {
 /* line 58, partials/_case-study-detail.scss */
 .cs-app-desc-subtitle {
   font-family: "Merriweather", Georgia, Cambria, "Times New Roman", Times, serif;
-  font-size: 0.875em; }
+  font-size: 0.83em; }
 
 /* line 63, partials/_case-study-detail.scss */
 .cs-app-text-wrap {
@@ -808,52 +808,57 @@ nav {
       /* line 85, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/neat-1.7.0/app/assets/stylesheets/grid/_span-columns.scss */
       .cs-app-text-wrap:last-child {
         margin-right: 0; } }
-  /* line 71, partials/_case-study-detail.scss */
-  .cs-app-text-wrap p {
-    font-family: "Merriweather", Georgia, Cambria, "Times New Roman", Times, serif;
-    font-size: 0.875em; }
 
-/* line 77, partials/_case-study-detail.scss */
+/* line 72, partials/_case-study-detail.scss */
 .cs-app-text-title {
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-weight: 600;
   margin-bottom: 5px; }
 
-/* line 83, partials/_case-study-detail.scss */
+/* line 78, partials/_case-study-detail.scss */
+.cs-app-text-subtitle {
+  font-family: "Merriweather", Georgia, Cambria, "Times New Roman", Times, serif;
+  font-size: 0.875em; }
+  @media screen and (min-width: 500px) {
+    /* line 78, partials/_case-study-detail.scss */
+    .cs-app-text-subtitle {
+      font-size: 0.83em; } }
+
+/* line 86, partials/_case-study-detail.scss */
 .mod-mesvaccins-link {
   color: #2662b6; }
-  /* line 85, partials/_case-study-detail.scss */
+  /* line 88, partials/_case-study-detail.scss */
   .mod-mesvaccins-link:hover {
     color: #113970; }
-  /* line 88, partials/_case-study-detail.scss */
+  /* line 91, partials/_case-study-detail.scss */
   .mod-mesvaccins-link:active, .mod-mesvaccins-link:focus {
     color: #113970; }
 
-/* line 93, partials/_case-study-detail.scss */
+/* line 96, partials/_case-study-detail.scss */
 .mod-buddybounce-link {
   color: #ffc56e; }
-  /* line 95, partials/_case-study-detail.scss */
+  /* line 98, partials/_case-study-detail.scss */
   .mod-buddybounce-link:hover {
     color: #FFB03B; }
-  /* line 98, partials/_case-study-detail.scss */
+  /* line 101, partials/_case-study-detail.scss */
   .mod-buddybounce-link:active, .mod-buddybounce-link:focus {
     color: #FFB03B; }
 
-/* line 103, partials/_case-study-detail.scss */
+/* line 106, partials/_case-study-detail.scss */
 .cs-techdetails-wrap {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
   background-color: #386098;
   margin-top: 0.5em;
-  padding-top: 1em; }
+  padding: 1em; }
   /* line 15, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_clearfix.scss */
   .cs-techdetails-wrap:after {
     content: "";
     display: table;
     clear: both; }
   @media screen and (max-width: 500px) {
-    /* line 103, partials/_case-study-detail.scss */
+    /* line 106, partials/_case-study-detail.scss */
     .cs-techdetails-wrap {
       float: left;
       display: block;
@@ -863,56 +868,58 @@ nav {
       .cs-techdetails-wrap:last-child {
         margin-right: 0; } }
   @media screen and (min-width: 500px) {
-    /* line 103, partials/_case-study-detail.scss */
+    /* line 106, partials/_case-study-detail.scss */
     .cs-techdetails-wrap {
       float: left;
       display: block;
       margin-right: 0%;
       width: 100%;
-      margin-top: 1em;
-      padding: 1em; }
+      margin-top: 1em; }
       /* line 85, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/neat-1.7.0/app/assets/stylesheets/grid/_span-columns.scss */
       .cs-techdetails-wrap:last-child {
         margin-right: 0; } }
 
-/* line 118, partials/_case-study-detail.scss */
+/* line 120, partials/_case-study-detail.scss */
 .cs-techdetails-wrap.mod-mesvaccins {
   background-color: #386098; }
 
-/* line 122, partials/_case-study-detail.scss */
+/* line 124, partials/_case-study-detail.scss */
 .cs-techdetails-wrap.mod-buddybounce {
-  background-color: #F5A623; }
+  background-color: #CC8208; }
 
-/* line 126, partials/_case-study-detail.scss */
+/* line 128, partials/_case-study-detail.scss */
 .cs-techdetails-text-wrap {
   margin: 0 auto;
-  max-width: 31.25em;
-  padding: 0 1em; }
+  max-width: 31.25em; }
 
-/* line 132, partials/_case-study-detail.scss */
+/* line 133, partials/_case-study-detail.scss */
 .cs-techdetails-title {
   color: white;
   font-size: 1.125em;
   font-weight: 600;
   margin-bottom: 0.75em; }
 
-/* line 139, partials/_case-study-detail.scss */
-.cs-techdetails-wrap p {
+/* line 140, partials/_case-study-detail.scss */
+.cs-techdetails-subtitle {
   color: white;
   font-family: "Merriweather", Georgia, Cambria, "Times New Roman", Times, serif;
-  font-size: 0.875em; }
+  font-size: 0.83em; }
+  @media screen and (min-width: 500px) {
+    /* line 140, partials/_case-study-detail.scss */
+    .cs-techdetails-subtitle {
+      font-size: 0.83em; } }
 
-/* line 145, partials/_case-study-detail.scss */
+/* line 149, partials/_case-study-detail.scss */
 .mod-mesvaccins-techdetails-link {
   color: #E7AB47; }
-  /* line 147, partials/_case-study-detail.scss */
+  /* line 151, partials/_case-study-detail.scss */
   .mod-mesvaccins-techdetails-link:hover {
     color: #b17717; }
-  /* line 151, partials/_case-study-detail.scss */
+  /* line 155, partials/_case-study-detail.scss */
   .mod-mesvaccins-techdetails-link:active, .mod-mesvaccins-techdetails-link:focus {
     color: #b17717; }
 
-/* line 157, partials/_case-study-detail.scss */
+/* line 161, partials/_case-study-detail.scss */
 .cs-techdetails-tags li {
   color: white;
   display: inline-block;
