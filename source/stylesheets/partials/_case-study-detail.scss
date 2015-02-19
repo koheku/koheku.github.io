@@ -53,8 +53,11 @@ $app-icon-height: 3.125em;
 }
 
 .cs-app-desc-subtitle {
+  @include media($medium-screen-up) {
+    font-size: $font-size-xsmall;
+  }
   font-family: $serif;
-  font-size: $font-size-xsmall;
+  font-size: $font-size-small;
 }
 
 .cs-app-text-wrap {
