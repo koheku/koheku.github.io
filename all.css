@@ -930,6 +930,9 @@ nav {
 
 /* line 1, partials/_screenshot-detail.scss */
 .screenshot-section-title {
+  max-width: 31.25em;
+  margin-left: auto;
+  margin-right: auto;
   border-bottom: 1px solid #DDD;
   font-size: 1.25em;
   font-weight: 600;
@@ -938,8 +941,13 @@ nav {
   padding-bottom: 0.5em;
   text-align: center;
   text-transform: uppercase; }
+  /* line 15, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_clearfix.scss */
+  .screenshot-section-title:after {
+    content: "";
+    display: table;
+    clear: both; }
 
-/* line 12, partials/_screenshot-detail.scss */
+/* line 13, partials/_screenshot-detail.scss */
 .screenshot-detail {
   max-width: 31.25em;
   margin-left: auto;
@@ -951,16 +959,16 @@ nav {
     display: table;
     clear: both; }
   @media screen and (min-width: 500px) {
-    /* line 12, partials/_screenshot-detail.scss */
+    /* line 13, partials/_screenshot-detail.scss */
     .screenshot-detail {
       margin: 3.5em auto; } }
 
-/* line 20, partials/_screenshot-detail.scss */
+/* line 21, partials/_screenshot-detail.scss */
 .screenshot-text-wrap {
   max-width: 30em;
   padding: 1em; }
   @media screen and (max-width: 500px) {
-    /* line 20, partials/_screenshot-detail.scss */
+    /* line 21, partials/_screenshot-detail.scss */
     .screenshot-text-wrap {
       float: left;
       display: block;
@@ -970,7 +978,7 @@ nav {
       .screenshot-text-wrap:last-child {
         margin-right: 0; } }
   @media screen and (min-width: 500px) {
-    /* line 20, partials/_screenshot-detail.scss */
+    /* line 21, partials/_screenshot-detail.scss */
     .screenshot-text-wrap {
       float: left;
       display: block;
@@ -980,7 +988,7 @@ nav {
       .screenshot-text-wrap:last-child {
         margin-right: 0; } }
   @media screen and (min-width: 53.75em) {
-    /* line 20, partials/_screenshot-detail.scss */
+    /* line 21, partials/_screenshot-detail.scss */
     .screenshot-text-wrap {
       float: left;
       display: block;
@@ -991,7 +999,7 @@ nav {
         margin-right: 0; } }
 
 @media screen and (max-width: 500px) {
-  /* line 34, partials/_screenshot-detail.scss */
+  /* line 35, partials/_screenshot-detail.scss */
   .screenshot-text-wrap.mod-shift-right-half {
     float: left;
     display: block;
@@ -1001,7 +1009,7 @@ nav {
     .screenshot-text-wrap.mod-shift-right-half:last-child {
       margin-right: 0; } }
 @media screen and (min-width: 500px) {
-  /* line 34, partials/_screenshot-detail.scss */
+  /* line 35, partials/_screenshot-detail.scss */
   .screenshot-text-wrap.mod-shift-right-half {
     float: left;
     display: block;
@@ -1012,7 +1020,7 @@ nav {
     .screenshot-text-wrap.mod-shift-right-half:last-child {
       margin-right: 0; } }
 @media screen and (min-width: 53.75em) {
-  /* line 34, partials/_screenshot-detail.scss */
+  /* line 35, partials/_screenshot-detail.scss */
   .screenshot-text-wrap.mod-shift-right-half {
     float: left;
     display: block;
@@ -1023,7 +1031,7 @@ nav {
     .screenshot-text-wrap.mod-shift-right-half:last-child {
       margin-right: 0; } }
 
-/* line 48, partials/_screenshot-detail.scss */
+/* line 49, partials/_screenshot-detail.scss */
 .screenshot-title {
   border-bottom: 1px solid rgba(51, 51, 51, 0.3);
   color: #333333;
@@ -1032,13 +1040,13 @@ nav {
   padding-bottom: 0.5em;
   text-align: left; }
 
-/* line 57, partials/_screenshot-detail.scss */
+/* line 58, partials/_screenshot-detail.scss */
 .screenshot-subtitle {
   color: #333333;
   font-size: 0.875em;
   text-align: left; }
 
-/* line 63, partials/_screenshot-detail.scss */
+/* line 64, partials/_screenshot-detail.scss */
 .screenshot-subtitle.mod-example {
   color: #999; }
 
