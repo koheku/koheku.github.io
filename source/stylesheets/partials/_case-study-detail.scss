@@ -163,7 +163,25 @@ $app-icon-height: 3.125em;
     display: inline-block;
     border: 1px solid white;
     border-radius: 100px;
-    padding: 0.2em 0.5em 0.3em;
+    padding: 0.2em 0.6em 0.3em;
     margin: 0.3em 0.15em;
+  }
+}
+
+.case-studies-link {
+  border: 2px solid $dark-pink;
+  border-radius: 2em;
+  color: $dark-pink;
+  display: block;
+  font-size: $font-size-large;
+  font-weight: $font-weight-semi-bold;
+  margin: 5em auto 1em;
+  padding: 0.4em 0.1em;
+  text-align: center;
+  width: 10em;
+
+  &:hover {
+    background-color: transparentize($dark-pink, 0.4);
+    color: white;
   }
 }
