@@ -1,10 +1,13 @@
 .screenshot-section-title {
+  @include media($medium-screen-up) {
+    margin-bottom: -1.5em;
+  }
   @include outer-container;
   border-bottom: 1px solid $light-gray;
   font-size: $font-size-xlarge;
   font-weight: $font-weight-semi-bold;
   display: block;
-  margin: 1.5em auto -1.5em;
+  margin: 1.5em auto 1.5em;
   padding-bottom: 0.5em;
   text-align: center;
   text-transform: uppercase;
