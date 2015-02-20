@@ -50,18 +50,23 @@
 }
 
 .screenshot-title {
-  border-bottom: 1px solid $light-gray;
+  @include media($medium-screen-up) {
+    text-align: left;
+  }
   color: $dark-gray;
   font-size: $font-size-large;
   font-weight: 600;
-  padding-bottom: 0.5em;
-  text-align: left;
+  text-align: center;
+  margin-bottom: 0.2em;
 }
 
 .screenshot-subtitle {
+  @include media($medium-screen-up) {
+    text-align: left;
+  }
   color: $dark-gray;
   font-size: $font-size-small;
-  text-align: left;
+  text-align: center;
 }
 
 .screenshot-subtitle.mod-example {
