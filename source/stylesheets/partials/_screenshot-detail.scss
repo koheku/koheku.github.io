@@ -4,7 +4,7 @@
   }
   @include outer-container;
   border-bottom: 1px solid $light-gray;
-  font-size: $font-size-xlarge;
+  font-size: $font-size-xxxlarge;
   font-weight: $font-weight-semi-bold;
   display: block;
   margin: 1.5em auto 1.5em;
@@ -54,7 +54,7 @@
     text-align: left;
   }
   color: $dark-gray;
-  font-size: $font-size-large;
+  font-size: $font-size-xxlarge;
   font-weight: 600;
   text-align: center;
   margin-bottom: 0.2em;
@@ -65,7 +65,7 @@
     text-align: left;
   }
   color: $dark-gray;
-  font-size: $font-size-small;
+  font-size: $font-size-large;
   text-align: center;
 }
 

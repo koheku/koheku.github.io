@@ -1,5 +1,5 @@
-$app-icon-width: 3.125em;
-$app-icon-height: 3.125em;
+$app-icon-width: 3.5em;
+$app-icon-height: 3.5em;
 
 .cs-app-intro {
   @include outer-container;
@@ -24,13 +24,13 @@ $app-icon-height: 3.125em;
 }
 
 .cs-app-intro-text-title {
-  font-size: $font-size-large;
+  font-size: $font-size-xxlarge;
   font-weight: $font-weight-semi-bold;
   margin-bottom: 0px;
 }
 
 .cs-app-intro-text-subtitle {
-
+  font-size: $font-size-large;
 }
 
 .cs-app-desc-wrap {
@@ -48,16 +48,18 @@ $app-icon-height: 3.125em;
 }
 
 .cs-app-desc-title {
+  font-size: $font-size-xxlarge;
   font-weight: $font-weight-semi-bold;
   margin-bottom: 5px;
 }
 
 .cs-app-desc-subtitle {
   @include media($medium-screen-up) {
-    font-size: $font-size-xsmall;
+    font-size: $font-size-medium;
   }
   font-family: $serif;
-  font-size: $font-size-small;
+  font-size: $font-size-large;
+  line-height: $line-height-large;
 }
 
 .cs-app-text-wrap {
@@ -65,22 +67,24 @@ $app-icon-height: 3.125em;
   @include media($mobile) {
     @include span-columns(4);
   }
-  padding: 0 1em;
+  padding: 0 1.25em;
   margin-top: 1em;
 }
 
 .cs-app-text-title {
   font-family: $sans-serif;
+  font-size: $font-size-xlarge;
   font-weight: $font-weight-semi-bold;
   margin-bottom: 5px;
 }
 
 .cs-app-text-subtitle {
   @include media($medium-screen-up) {
-    font-size: $font-size-xsmall;
+    font-size: $font-size-small;
   }
   font-family: $serif;
-  font-size: $font-size-small;
+  font-size: $font-size-medium;
+  line-height: $line-height-normal;
 }
 
 .mod-mesvaccins-link {
@@ -114,7 +118,7 @@ $app-icon-height: 3.125em;
   }
   background-color: $light-mv-blue;
   margin-top: 0.5em;
-  padding: 1em;
+  padding: 1em 0;
 }
 
 .cs-techdetails-wrap.mod-mesvaccins {
@@ -128,22 +132,25 @@ $app-icon-height: 3.125em;
 .cs-techdetails-text-wrap {
   margin: 0 auto;
   max-width: em(500);
+  padding: 0 1.25em;
 }
 
 .cs-techdetails-title {
   color: white;
-  font-size: $font-size-large;
+  font-size: $font-size-xxxlarge;
   font-weight: $font-weight-semi-bold;
   margin-bottom: 0.75em;
 }
 
 .cs-techdetails-subtitle {
   @include media($medium-screen-up) {
-    font-size: $font-size-xsmall;
+    font-size: $font-size-small;
   }
   color: white;
   font-family: $serif;
-  font-size: $font-size-xsmall;
+  font-size: $font-size-medium;
+  line-height: $line-height-normal;
+  margin-bottom: 1em;
 }
 
 .mod-mesvaccins-techdetails-link {
@@ -173,9 +180,9 @@ $app-icon-height: 3.125em;
   border-radius: 2em;
   color: $dark-pink;
   display: block;
-  font-size: $font-size-large;
+  font-size: $font-size-xxlarge;
   font-weight: $font-weight-semi-bold;
-  margin: 5em auto 1em;
+  margin: 3em auto 1em;
   padding: 0.4em 0.1em;
   text-align: center;
   width: 10em;

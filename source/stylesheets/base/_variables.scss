@@ -3,13 +3,19 @@ $sans-serif: 'Source Sans Pro', $helvetica;
 $serif: 'Merriweather', $georgia;
 $base-font-family: $sans-serif;
 $header-font-family: $base-font-family;
+
 $font-weight-semi-bold: 600;
-$font-weight-semi-bold: 600;
+
 $font-size-xsmall: 0.83em;
 $font-size-small: 0.875em;
-$font-size-medium: 1em;
+$font-size-medium: 1.0625em;
 $font-size-large: 1.125em;
 $font-size-xlarge: 1.25em;
+$font-size-xxlarge: 1.5em;
+$font-size-xxxlarge: 1.75em;
+
+$line-height-normal: 1.6875em;
+$line-height-large: 1.8em;
 
 // Font Sizes
 $base-font-size: 1em;
