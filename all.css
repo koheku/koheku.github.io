@@ -840,13 +840,13 @@ nav {
 
 /* line 96, partials/_case-study-detail.scss */
 .mod-buddybounce-link {
-  color: #ffc56e; }
+  color: #FFB03B; }
   /* line 98, partials/_case-study-detail.scss */
   .mod-buddybounce-link:hover {
-    color: #FFB03B; }
+    color: #d47f00; }
   /* line 101, partials/_case-study-detail.scss */
   .mod-buddybounce-link:active, .mod-buddybounce-link:focus {
-    color: #FFB03B; }
+    color: #d47f00; }
 
 /* line 106, partials/_case-study-detail.scss */
 .cs-techdetails-wrap {
