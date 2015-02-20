@@ -94,12 +94,12 @@ $app-icon-height: 3.125em;
 }
 
 .mod-buddybounce-link {
-  color: lighten($bb-yellow, 10%);
+  color: $bb-yellow;
   &:hover {
-    color: $bb-yellow;
+    color: darken($bb-yellow, 20%);
   }
   &:active, &:focus {
-    color: $bb-yellow;
+    color: darken($bb-yellow, 20%);
   }
 }
 
