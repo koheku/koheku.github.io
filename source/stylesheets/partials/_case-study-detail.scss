@@ -1,12 +1,12 @@
-$app-icon-width: 3.5em;
-$app-icon-height: 3.5em;
+$app-icon-width: 3.75em;
+$app-icon-height: 3.75em;
 
 .cs-app-intro {
   @include outer-container;
   @include media($mobile) {
     @include span-columns(4);
   }
-  padding: 1em 0.5em 0;
+  padding: 1em 1.25em 0;
 }
 
 .cs-app-intro-icon-wrap {
@@ -20,7 +20,7 @@ $app-icon-height: 3.5em;
 
 .cs-app-intro-text-wrap {
   display: inline-block;
-  padding-left: 0.75em;
+  padding-left: 1em;
 }
 
 .cs-app-intro-text-title {
