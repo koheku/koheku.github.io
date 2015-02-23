@@ -1,3 +1,6 @@
+$study-text-color: white;
+$study-link-color: white;
+
 .case-study {
   @include outer-container(100%);
   @include media($medium-screen-up) {
@@ -21,9 +24,6 @@
   background-image: url("/assets/mv/mesvaccins-background.jpg");
   background-color: $dark-mv-blue;
 }
-
-$study-text-color: white;
-$study-link-color: white;
 
 .case-study-text-wrap {
   @include media($mobile) {
@@ -80,7 +80,7 @@ $study-link-color: white;
   display: block;
   font-size: $font-size-large;
   margin: 0.5em auto 1.5em;
-  max-width: 22em;
+  max-width: 15em;
   padding-top: 0.5em;
   text-align: center;
 }
@@ -108,10 +108,10 @@ $study-link-color: white;
   border-radius: 100px;
   color: $study-link-color;
   display: block;
-  font-size: $font-size-large;
+  font-size: $font-size-xlarge;
   font-weight: $font-weight-semi-bold;
   margin: 0 auto;
-  padding: 0.2em 0.2em 0.3em 0.2em;
+  padding: 0.25em 0.4em 0.35em;
   text-align: center;
   width: 6em;
 
