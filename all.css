@@ -710,7 +710,7 @@ nav {
   max-width: 31.25em;
   margin-left: auto;
   margin-right: auto;
-  padding: 1em 0.5em 0; }
+  padding: 1em 1.25em 0; }
   /* line 15, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_clearfix.scss */
   .cs-app-intro:after {
     content: "";
@@ -734,13 +734,13 @@ nav {
 
 /* line 17, partials/_case-study-detail.scss */
 .cs-app-intro-icon {
-  height: 3.5em;
-  width: 3.5em; }
+  height: 3.75em;
+  width: 3.75em; }
 
 /* line 21, partials/_case-study-detail.scss */
 .cs-app-intro-text-wrap {
   display: inline-block;
-  padding-left: 0.75em; }
+  padding-left: 1em; }
 
 /* line 26, partials/_case-study-detail.scss */
 .cs-app-intro-text-title {
