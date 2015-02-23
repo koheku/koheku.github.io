@@ -10,6 +10,7 @@
     <%# <%= javascript_include_tag 'main' %>
     <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600|Merriweather' rel='stylesheet' type='text/css'>
+    <%= partial "partials/favicon" %>
     <%= google_analytics_tag %>
   </head>
 
