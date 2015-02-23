@@ -527,7 +527,7 @@ nav {
   font-size: 1.25em;
   margin: 0; }
 
-/* line 1, partials/_case-study.scss */
+/* line 4, partials/_case-study.scss */
 .case-study {
   max-width: 100%;
   margin-left: auto;
@@ -545,16 +545,16 @@ nav {
     display: table;
     clear: both; }
   @media screen and (min-width: 500px) {
-    /* line 1, partials/_case-study.scss */
+    /* line 4, partials/_case-study.scss */
     .case-study {
       margin-top: 2.5em; } }
 
-/* line 15, partials/_case-study.scss */
+/* line 18, partials/_case-study.scss */
 .case-study.mod-buddybounce {
   background-image: url("/assets/bb/buddybounce-background.jpg");
   background-color: #d47f00; }
 
-/* line 20, partials/_case-study.scss */
+/* line 23, partials/_case-study.scss */
 .case-study.mod-mesvaccins {
   background-image: url("/assets/mv/mesvaccins-background.jpg");
   background-color: #113970; }
@@ -644,7 +644,7 @@ nav {
   display: block;
   font-size: 1.125em;
   margin: 0.5em auto 1.5em;
-  max-width: 22em;
+  max-width: 15em;
   padding-top: 0.5em;
   text-align: center; }
   /* line 15, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_clearfix.scss */
@@ -677,10 +677,10 @@ nav {
   border-radius: 100px;
   color: white;
   display: block;
-  font-size: 1.125em;
+  font-size: 1.25em;
   font-weight: 600;
   margin: 0 auto;
-  padding: 0.2em 0.2em 0.3em 0.2em;
+  padding: 0.25em 0.4em 0.35em;
   text-align: center;
   width: 6em; }
   /* line 15, ../../../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_clearfix.scss */
