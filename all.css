@@ -496,6 +496,10 @@ nav {
   margin-top: 1em;
   text-align: center; }
 
+/* line 62, partials/_profile.scss */
+.profile-text-cv-link {
+  color: #955597; }
+
 /* line 1, partials/_work-intro.scss */
 .work-intro {
   max-width: 31.25em;
