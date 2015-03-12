@@ -89,6 +89,7 @@ $app-icon-height: 3.75em;
   color: lighten($mv-blue, 10%);
   &:hover {
     color: $dark-mv-blue;
+    text-decoration: underline;
   }
   &:active, &:focus {
     color: $dark-mv-blue;
@@ -99,6 +100,7 @@ $app-icon-height: 3.75em;
   color: $bb-yellow;
   &:hover {
     color: darken($bb-yellow, 20%);
+    text-decoration: underline;
   }
   &:active, &:focus {
     color: darken($bb-yellow, 20%);

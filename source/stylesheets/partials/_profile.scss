@@ -61,6 +61,9 @@
 
 .profile-text-cv-link {
   color: $dark-pink;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 // .profile-iphone-image-wrap {
