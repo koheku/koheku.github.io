@@ -499,6 +499,9 @@ nav {
 /* line 62, partials/_profile.scss */
 .profile-text-cv-link {
   color: #955597; }
+  /* line 64, partials/_profile.scss */
+  .profile-text-cv-link:hover {
+    text-decoration: underline; }
 
 /* line 1, partials/_work-intro.scss */
 .work-intro {
@@ -843,22 +846,24 @@ nav {
   color: #2662b6; }
   /* line 90, partials/_case-study-detail.scss */
   .mod-mesvaccins-link:hover {
-    color: #113970; }
-  /* line 93, partials/_case-study-detail.scss */
+    color: #113970;
+    text-decoration: underline; }
+  /* line 94, partials/_case-study-detail.scss */
   .mod-mesvaccins-link:active, .mod-mesvaccins-link:focus {
     color: #113970; }
 
-/* line 98, partials/_case-study-detail.scss */
+/* line 99, partials/_case-study-detail.scss */
 .mod-buddybounce-link {
   color: #FFB03B; }
-  /* line 100, partials/_case-study-detail.scss */
+  /* line 101, partials/_case-study-detail.scss */
   .mod-buddybounce-link:hover {
-    color: #d47f00; }
-  /* line 103, partials/_case-study-detail.scss */
+    color: #d47f00;
+    text-decoration: underline; }
+  /* line 105, partials/_case-study-detail.scss */
   .mod-buddybounce-link:active, .mod-buddybounce-link:focus {
     color: #d47f00; }
 
-/* line 108, partials/_case-study-detail.scss */
+/* line 110, partials/_case-study-detail.scss */
 .cs-techdetails-wrap {
   max-width: 100%;
   margin-left: auto;
@@ -872,7 +877,7 @@ nav {
     display: table;
     clear: both; }
   @media screen and (max-width: 500px) {
-    /* line 108, partials/_case-study-detail.scss */
+    /* line 110, partials/_case-study-detail.scss */
     .cs-techdetails-wrap {
       float: left;
       display: block;
@@ -882,7 +887,7 @@ nav {
       .cs-techdetails-wrap:last-child {
         margin-right: 0; } }
   @media screen and (min-width: 500px) {
-    /* line 108, partials/_case-study-detail.scss */
+    /* line 110, partials/_case-study-detail.scss */
     .cs-techdetails-wrap {
       float: left;
       display: block;
@@ -893,28 +898,28 @@ nav {
       .cs-techdetails-wrap:last-child {
         margin-right: 0; } }
 
-/* line 122, partials/_case-study-detail.scss */
+/* line 124, partials/_case-study-detail.scss */
 .cs-techdetails-wrap.mod-mesvaccins {
   background-color: #386098; }
 
-/* line 126, partials/_case-study-detail.scss */
+/* line 128, partials/_case-study-detail.scss */
 .cs-techdetails-wrap.mod-buddybounce {
   background-color: #CC8208; }
 
-/* line 130, partials/_case-study-detail.scss */
+/* line 132, partials/_case-study-detail.scss */
 .cs-techdetails-text-wrap {
   margin: 0 auto;
   max-width: 31.25em;
   padding: 0 1.25em; }
 
-/* line 136, partials/_case-study-detail.scss */
+/* line 138, partials/_case-study-detail.scss */
 .cs-techdetails-title {
   color: white;
   font-size: 1.75em;
   font-weight: 600;
   margin-bottom: 0.75em; }
 
-/* line 143, partials/_case-study-detail.scss */
+/* line 145, partials/_case-study-detail.scss */
 .cs-techdetails-subtitle {
   color: white;
   font-family: "Merriweather", Georgia, Cambria, "Times New Roman", Times, serif;
@@ -922,21 +927,21 @@ nav {
   line-height: 1.6875em;
   margin-bottom: 1em; }
   @media screen and (min-width: 500px) {
-    /* line 143, partials/_case-study-detail.scss */
+    /* line 145, partials/_case-study-detail.scss */
     .cs-techdetails-subtitle {
       font-size: 0.875em; } }
 
-/* line 154, partials/_case-study-detail.scss */
+/* line 156, partials/_case-study-detail.scss */
 .mod-mesvaccins-techdetails-link {
   color: #E7AB47; }
-  /* line 156, partials/_case-study-detail.scss */
+  /* line 158, partials/_case-study-detail.scss */
   .mod-mesvaccins-techdetails-link:hover {
     color: #b17717; }
-  /* line 160, partials/_case-study-detail.scss */
+  /* line 162, partials/_case-study-detail.scss */
   .mod-mesvaccins-techdetails-link:active, .mod-mesvaccins-techdetails-link:focus {
     color: #b17717; }
 
-/* line 166, partials/_case-study-detail.scss */
+/* line 168, partials/_case-study-detail.scss */
 .cs-techdetails-tags li {
   color: white;
   display: inline-block;
@@ -945,7 +950,7 @@ nav {
   padding: 0.2em 0.6em 0.3em;
   margin: 0.3em 0.15em; }
 
-/* line 176, partials/_case-study-detail.scss */
+/* line 178, partials/_case-study-detail.scss */
 .case-studies-link {
   border: 2px solid #955597;
   border-radius: 2em;
@@ -957,7 +962,7 @@ nav {
   padding: 0.4em 0.1em;
   text-align: center;
   width: 10em; }
-  /* line 188, partials/_case-study-detail.scss */
+  /* line 190, partials/_case-study-detail.scss */
   .case-studies-link:hover {
     background-color: rgba(149, 85, 151, 0.6);
     color: white; }
