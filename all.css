@@ -1183,25 +1183,26 @@ nav {
 
 /* line 62, partials/_iphone5-mock.scss */
 .screen {
-  width: 100%;
-  height: 100%;
+  background-size: cover;
   border: 1px solid #bdc3c7;
-  margin: auto; }
+  height: 100%;
+  margin: auto;
+  width: 100%; }
 
-/* line 69, partials/_iphone5-mock.scss */
+/* line 70, partials/_iphone5-mock.scss */
 .gfy-container {
   width: 108%;
   height: 108%; }
 
-/* line 74, partials/_iphone5-mock.scss */
+/* line 75, partials/_iphone5-mock.scss */
 .screen.mod-mesvaccins {
   background-image: url(/assets/mv/mesvaccins-screenshot1.jpg); }
 
-/* line 78, partials/_iphone5-mock.scss */
+/* line 79, partials/_iphone5-mock.scss */
 .screen.mod-colorcard {
   background-image: url(/assets/cc/colorcard-screenshot1.jpg); }
 
-/* line 82, partials/_iphone5-mock.scss */
+/* line 83, partials/_iphone5-mock.scss */
 .screen.mod-buddybounce {
   background-image: url(/assets/bb/buddybounce-screenshot1.jpg); }
 
