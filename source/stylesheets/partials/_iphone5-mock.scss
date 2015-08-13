@@ -1,7 +1,7 @@
 // .iphone5
 $iphone5-padding-vertical: 2.8em;
 $iphone5-padding-horizontal: 0.4em;
-$iphone5-bezel-color: $light-gray;
+$iphone5-bezel-color: $light-medium-gray;
 
 // .screen
 $iphone5-screen-width: 10em;
@@ -67,6 +67,10 @@ $iphone5-screen-border: $iphone5-bezel-color;
 
 .screen.mod-mesvaccins {
   background-image: url(/assets/mv/mesvaccins-screenshot1.jpg);
+}
+
+.screen.mod-colorcard {
+  background-image: url(/assets/cc/colorcard-screenshot1.jpg);
 }
 
 .screen.mod-buddybounce {

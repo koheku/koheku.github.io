@@ -15,14 +15,19 @@ $study-link-color: white;
   color: $dark-gray;
 }
 
-.case-study.mod-buddybounce {
-  background-image: url("/assets/bb/buddybounce-background.jpg");
-  background-color: darken($bb-yellow, 20%);
-}
-
 .case-study.mod-mesvaccins {
   background-image: url("/assets/mv/mesvaccins-background.jpg");
   background-color: $dark-mv-blue;
+}
+
+.case-study.mod-colorcard {
+  background-image: url("/assets/cc/colorcard-background.jpg");
+  background-color: $dark-cc-blue;
+}
+
+.case-study.mod-buddybounce {
+  background-image: url("/assets/bb/buddybounce-background.jpg");
+  background-color: darken($bb-yellow, 20%);
 }
 
 .case-study-text-wrap {

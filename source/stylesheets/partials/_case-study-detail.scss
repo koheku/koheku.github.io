@@ -73,7 +73,7 @@ $app-icon-height: 3.75em;
   font-family: $sans-serif;
   font-size: $font-size-xlarge;
   font-weight: $font-weight-semi-bold;
-  margin-bottom: 5px;
+  margin-bottom: 0.7em;
 }
 
 .cs-app-text-subtitle {
@@ -125,6 +125,10 @@ $app-icon-height: 3.75em;
   background-color: $light-mv-blue;
 }
 
+.cs-techdetails-wrap.mod-colorcard {
+  background-color: $dark-cc-blue;
+}
+
 .cs-techdetails-wrap.mod-buddybounce {
   background-color: $dark-bb-yellow;
 }
@@ -154,13 +158,16 @@ $app-icon-height: 3.75em;
 }
 
 .mod-mesvaccins-techdetails-link {
-  color: $mv-yellow;
+  color: white;
+  border-bottom: 1px solid white;
   &:hover {
-    color: darken($mv-yellow, 20%);
+    border-bottom: 1px solid $mv-yellow;
+    color: $mv-yellow;
   }
 
   &:active, &:focus {
-    color: darken($mv-yellow, 20%);
+    border-bottom: 1px solid $mv-yellow;
+    color: $mv-yellow;
   }
 }
 
