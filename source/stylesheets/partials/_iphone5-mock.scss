@@ -60,10 +60,11 @@ $iphone5-screen-border: $iphone5-bezel-color;
 }
 
 .screen {
-  width: 100%;
-  height: 100%;
+  background-size: cover;
   border: 1px solid $iphone5-bezel-color;
+  height: 100%;
   margin: auto;
+  width: 100%;
 }
 
 .gfy-container {
