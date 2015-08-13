@@ -60,7 +60,7 @@
   <id>http://blog.url.com/blog</id>
   <link href="http://blog.url.com/blog"/>
   <link href="http://blog.url.com/blog/feed.xml" rel="self"/>
-  <updated>2014-12-15T07:00:00+07:00</updated>
+  <updated>2014-12-15T01:00:00+01:00</updated>
   <author>
     <name>Blog Author</name>
   </author>
@@ -68,8 +68,8 @@
     <title>Blog with middleman and Github Pages</title>
     <link rel="alternate" href="http://blog.url.com/blog/2014/12/15/creating-my-blog/"/>
     <id>http://blog.url.com/blog/2014/12/15/creating-my-blog/</id>
-    <published>2014-12-15T07:00:00+07:00</published>
-    <updated>2015-02-18T01:22:10+07:00</updated>
+    <published>2014-12-15T01:00:00+01:00</published>
+    <updated>2015-02-17T19:22:10+01:00</updated>
     <author>
       <name>Article Author</name>
     </author>
