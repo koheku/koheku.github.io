@@ -1,17 +1,18 @@
-# If you have OpenSSL installed, we recommend updating
-# the following line to use "https"
-source 'http://rubygems.org'
+# If you do not have OpenSSL installed, change
+# the following line to use 'http://'
+source 'https://rubygems.org'
 
-gem "middleman", "~> 3.3.7"
-gem "middleman-blog", "~> 3.5.3"
-
-# For feed.xml.builder
-gem "builder", "~> 3.0"
-
+# Middleman Gems
+gem "middleman", ">= 4.0.0"
 gem 'middleman-livereload'
-gem 'middleman-deploy'
+gem "middleman-blog"
+gem 'middleman-deploy', github: 'middleman-contrib/middleman-deploy', branch: 'master'
 gem "middleman-google-analytics"
 
 gem 'bitters'
 gem 'bourbon'
 gem 'neat'
+gem 'redcarpet', '~> 3.3'
+
+# For feed.xml.builder
+gem "builder", "~> 3.0"
