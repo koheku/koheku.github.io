@@ -6,3 +6,10 @@ tags: middleman, github
 
 Welcome to my blog !
 It is powered by middleman and github pages.
+
+~~~ ruby
+def my_cool_method(message)
+  puts message
+  puts "Hello JD"
+end
+~~~

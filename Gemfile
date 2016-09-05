@@ -6,8 +6,11 @@ source 'https://rubygems.org'
 gem "middleman", ">= 4.0.0"
 gem 'middleman-livereload'
 gem "middleman-blog"
-gem 'middleman-deploy', github: 'middleman-contrib/middleman-deploy', branch: 'master'
+# gem 'middleman-deploy', github: 'middleman-contrib/middleman-deploy', branch: 'master'
+# gem 'middleman-deploy'
+gem 'middleman-deploy', github: 'middleman-contrib/middleman-deploy', ref: '9cd8988a66829550fcbfbb90e306593d6ee9307d'
 gem "middleman-google-analytics"
+gem 'middleman-syntax'
 
 gem 'bitters'
 gem 'bourbon'

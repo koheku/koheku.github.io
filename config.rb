@@ -12,6 +12,12 @@ page "/feed.xml", layout: false
 # Pretty urls
 activate :directory_indexes
 
+# Syntax coloring
+activate :syntax
+# set :markdown_engine, :redcarpet
+# set :markdown, :fenced_code_blocks => true, :smartypants => true
+set :markdown_engine, :kramdown
+
 activate :blog do |blog|
   # This will add a prefix to all links, template references and source paths
   blog.prefix = "blog"
